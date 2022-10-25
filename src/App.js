@@ -14,6 +14,9 @@ function App() {
           <Home />
         </Route>
       </Routes>
+      <footer>
+        
+      </footer>
     </div>
   );
 }
