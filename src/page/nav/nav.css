@@ -1,0 +1,29 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+ul, li {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    margin: 0px 15px;
+    justify-content: center;
+    opacity: .8;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #f5f5f7;
+    font-size: 16px;
+    transition: .3s;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+svg {
+    height: 75%;
+    fill: #f5f5f7;
+}

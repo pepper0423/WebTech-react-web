@@ -1,8 +1,14 @@
+import "./App.css";
+import Home from "./page/home";
+import Nav from './page/nav';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <header>
+        <Nav />
+      </header>
+      <Home />
     </div>
   );
 }
