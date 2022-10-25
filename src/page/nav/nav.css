@@ -1,8 +1,8 @@
-nav {
+.navbar {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-ul, li {
+.navbar ul, .navbar li {
     display: flex;
     flex-direction: row;
     padding: 8px;
@@ -19,7 +19,7 @@ a {
     transition: .3s;
 }
 
-li:hover {
+.navbar li:hover {
     opacity: 1;
 }
 

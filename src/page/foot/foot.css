@@ -1,0 +1,15 @@
+.foot-container {
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 50px;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 90%;
+}
+
+.top-foot nav li {
+    margin-top: 20px;
+    margin-left: 50px;
+}
