@@ -1,16 +1,17 @@
+import { NavLink } from 'react-router-dom';
 import './nav.css'
 
 function Nav() {
     return (
         <nav className='navbar'>
             <ul>
-                <li><a href='#'><Logo/></a></li>
-                <li><a href='#'>ร้าน</a></li>
-                <li><a href='#'>Mac</a></li>
-                <li><a href='#'>iPhone</a></li>
-                <li><a href='#'>iPad</a></li>
-                <li><a href='#'>Accessories</a></li>
-                <li><a href='#'><Basket/></a></li>
+                <li><NavLink to='/'><Logo/></NavLink></li>
+                <li><NavLink to='/'>ร้าน</NavLink></li>
+                <li><NavLink to='/'>Mac</NavLink></li>
+                <li><NavLink to='/'>iPhone</NavLink></li>
+                <li><NavLink to='/'>iPad</NavLink></li>
+                <li><NavLink to='/'>Accessories</NavLink></li>
+                <li><NavLink to='/'><Basket/></NavLink></li>
             </ul>
         </nav>
     );
