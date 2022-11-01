@@ -10,10 +10,9 @@ iframe {
     left: 20%;
 }
 
-.floatin h3,
-p {
+.floatin h3, p {
     color: white;
-    line-height: .8;
+    line-height: 0.9
 }
 
 .floatin h3 {
@@ -21,10 +20,12 @@ p {
 }
 
 .floatin p {
-    font-size: 32px;
+    font-size: 30px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-bottom: 20px;
+    margin-left: 5px;
 }
 
 .floatin a {

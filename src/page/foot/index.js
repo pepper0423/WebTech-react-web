@@ -3,7 +3,7 @@ import './foot.css';
 function Foot() {
     return (
         <div className='foot-container'><br/>
-            <div className='top-foot'>
+            <div className='top-foot pb-32'>
                 <nav>
                     <ul>
                         <li>test</li>
