@@ -12,8 +12,8 @@ function App() {
         <Nav />
       </header>
       <Routes>
-        <Route path="/" exact element={<Home />}/>
-        <Route path="/accessories" element={<Accessories/>}/>
+        <Route path="/" element={<Home />}/>
+        <Route path="accessories" element={<Accessories/>}/>
       </Routes>
       <footer>
         <Foot/>

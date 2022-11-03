@@ -1,7 +1,8 @@
 import './itemslider.css';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
-function Itemslider({ title, rowID }) {
+function Itemslider({ title, rowID, toItem }) {
     const test = [
         { id: 1, itemName: 'item1' },
         { id: 2, itemName: 'item2' },
@@ -23,7 +24,7 @@ function Itemslider({ title, rowID }) {
 
     return (
         <div>
-            <h3 className='text-3xl cursor-default p-4'>{title} <span className='text-xl text-sky-500 cursor-pointer'>ดูเพิ่มเติม &#10095;</span></h3>
+            <h3 className='text-3xl cursor-default p-4'>{title} <span><Link to={toItem} className='text-xl text-sky-500 cursor-pointer'>ดูเพิ่มเติม &#10095;</Link></span></h3>
             <div className='relative flex items-center group'>
                 <MdChevronLeft
                     onClick={slideLeft}

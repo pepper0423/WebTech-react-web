@@ -11,9 +11,9 @@ function Home() {
                 </div>
                 <Carousel />
                 <div className='container mx-auto py-12 px-60'>
-                    <Itemslider title='iPhone' rowID='1' />
-                    <Itemslider title='iPad' rowID='2' />
-                    <Itemslider title='อุปกรณ์เสริม' rowID='3' />
+                    <Itemslider title='iPhone' rowID='1' toItem='iphone' />
+                    <Itemslider title='iPad' rowID='2' toItem='ipad' />
+                    <Itemslider title='อุปกรณ์เสริม' rowID='3' toItem='accessories' />
                 </div>
             </section>
         </div>

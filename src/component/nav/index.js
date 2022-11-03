@@ -7,11 +7,11 @@ function Nav() {
             <div className='fixed top-0 w-full backdrop-blur-lg'>
                 <nav className='navbar'>
                     <ul className='gap-20'>
-                        <li><NavLink to='/' className='text-sm'><Logo /></NavLink></li>
+                        <li><NavLink to='/' className='text-sm' end><Logo /></NavLink></li>
                         <li><NavLink to='/' className='text-sm'>ร้าน</NavLink></li>
                         <li><NavLink to='/' className='text-sm'>iPhone</NavLink></li>
                         <li><NavLink to='/' className='text-sm'>iPad</NavLink></li>
-                        <li><NavLink to='/accessories' className='text-sm'>อุปกรณ์เสริม</NavLink></li>
+                        <li><NavLink to='accessories' className='text-sm'>อุปกรณ์เสริม</NavLink></li>
                         <li><NavLink to='/' className='text-sm'>บริการช่วยเหลือ</NavLink></li>
                         <li><NavLink to='/' className='text-sm'><Basket /></NavLink></li>
                     </ul>
