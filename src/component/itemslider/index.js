@@ -3,13 +3,33 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 function Itemslider({ title, rowID, toItem }) {
-    const test = [
+    var itemMap;
+
+    const test1 = [
         { id: 1, itemName: 'item1' },
         { id: 2, itemName: 'item2' },
         { id: 3, itemName: 'item3' },
         { id: 4, itemName: 'item4' },
         { id: 5, itemName: 'item5' },
         { id: 6, itemName: 'item6' }
+    ];
+
+    const test2 = [
+        { id: 1, itemName: 'item1' },
+        { id: 2, itemName: 'item2' },
+        { id: 3, itemName: 'item3' },
+        { id: 4, itemName: 'item4' },
+        { id: 5, itemName: 'item5' }
+    ];
+
+    const test3 = [
+        { id: 1, itemName: 'item1' },
+        { id: 2, itemName: 'item2' },
+        { id: 3, itemName: 'item3' },
+        { id: 4, itemName: 'item4' },
+        { id: 5, itemName: 'item5' },
+        { id: 6, itemName: 'item6' },
+        { id: 7, itemName: 'item7' }
     ];
 
     const slideLeft = () => {
@@ -20,6 +40,14 @@ function Itemslider({ title, rowID, toItem }) {
         var slider = document.getElementById('slider' + rowID);
         slider.scrollLeft = slider.scrollLeft + 500;
     };
+
+    if (title == 'iPhone') {
+        itemMap = test1;
+    } else if (title == 'iPad') {
+        itemMap = test2;
+    } else if (title == 'อุปกรณ์เสริม') {
+        itemMap = test3;
+    }
 
 
     return (
@@ -32,10 +60,10 @@ function Itemslider({ title, rowID, toItem }) {
                     size={60} color={'white'}
                 />
                 <div id={'slider' + rowID} className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative'>
-                    {test.map((item) => (
-                        <div className='w-[240px] inline-block cursor-pointer relative p-2'>
-                            <div className='border-2 text-center p-24'>{item.itemName}</div>
-                        </div>
+                    {itemMap.map((item) => (
+                            <div className='w-[240px] inline-block cursor-pointer relative p-2'>
+                                <div className='border-2 text-center p-24'>{item.itemName}</div>
+                            </div>
                     ))}
                 </div>
                 <MdChevronRight
