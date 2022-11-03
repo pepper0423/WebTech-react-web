@@ -1,8 +1,8 @@
 import "./App.css";
 import Home from "./page/home";
-import Nav from './page/nav';
+import Nav from './component/nav';
 import { Routes, Route } from 'react-router-dom';
-import Foot from "./page/foot";
+import Foot from "./component/foot";
 
 function App() {
   return (
@@ -11,9 +11,7 @@ function App() {
         <Nav />
       </header>
       <Routes>
-        <Route path="/" exact>
-          <Home />
-        </Route>
+        <Route path="/" exact element={<Home />}/>
       </Routes>
       <footer>
         <Foot/>
