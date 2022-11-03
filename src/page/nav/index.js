@@ -7,7 +7,6 @@ function Nav() {
             <ul>
                 <li><NavLink to='/'><Logo/></NavLink></li>
                 <li><NavLink to='/'>ร้าน</NavLink></li>
-                <li><NavLink to='/'>Mac</NavLink></li>
                 <li><NavLink to='/'>iPhone</NavLink></li>
                 <li><NavLink to='/'>iPad</NavLink></li>
                 <li><NavLink to='/'>Accessories</NavLink></li>
