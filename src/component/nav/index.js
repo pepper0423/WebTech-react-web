@@ -11,7 +11,7 @@ function Nav() {
                         <li><NavLink to='/' className='text-sm'>ร้าน</NavLink></li>
                         <li><NavLink to='/' className='text-sm'>iPhone</NavLink></li>
                         <li><NavLink to='/' className='text-sm'>iPad</NavLink></li>
-                        <li><NavLink to='/' className='text-sm'>อุปกรณ์เสริม</NavLink></li>
+                        <li><NavLink to='/accessories' className='text-sm'>อุปกรณ์เสริม</NavLink></li>
                         <li><NavLink to='/' className='text-sm'>บริการช่วยเหลือ</NavLink></li>
                         <li><NavLink to='/' className='text-sm'><Basket /></NavLink></li>
                     </ul>

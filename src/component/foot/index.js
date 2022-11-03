@@ -13,7 +13,7 @@ function Foot() {
                                 <li><NavLink to='/' className='footer-text text-sm hover:underline'>ร้าน</NavLink></li>
                                 <li><NavLink to='/' className='footer-text text-sm hover:underline'>iPad</NavLink></li>
                                 <li><NavLink to='/' className='footer-text text-sm hover:underline'>iPhone</NavLink></li>
-                                <li><NavLink to='/' className='footer-text text-sm hover:underline'>อุปกรณ์เสริม</NavLink></li>
+                                <li><NavLink to='/accessories' className='footer-text text-sm hover:underline'>อุปกรณ์เสริม</NavLink></li>
                             </ul>
                         </div>
                         <div>

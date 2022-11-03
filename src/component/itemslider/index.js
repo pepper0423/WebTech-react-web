@@ -1,5 +1,5 @@
 import './itemslider.css';
-import {} from 'react-icons/md'
+/* import {} from 'react-icons/md'; */
 
 function Itemslider({ title }) {
     const test = [
