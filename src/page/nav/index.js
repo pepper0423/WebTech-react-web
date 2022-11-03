@@ -4,7 +4,7 @@ import './nav.css'
 function Nav() {
     return (
         <div className='relative pb-12 z-40 max-w-full'>
-            <div className='fixed top-0 w-full'>
+            <div className='fixed top-0 w-full backdrop-blur-xl'>
                 <nav className='navbar'>
                     <ul className='gap-20'>
                         <li><NavLink to='/' className='text-sm'><Logo /></NavLink></li>
