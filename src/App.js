@@ -1,6 +1,6 @@
 import "./App.css";
-import Home from "./page/home";
-import Accessories from "./page/accessories";
+import Home from "./pages/home";
+import Accessories from "./pages/accessories";
 import Nav from './component/nav';
 import { Routes, Route } from 'react-router-dom';
 import Foot from "./component/foot";
