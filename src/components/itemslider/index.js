@@ -6,37 +6,37 @@ function Itemslider({ title, rowID, toItem }) {
     var itemMap;
 
     const test0 = [
-        { id: 1, itemName: 'item1' },
-        { id: 2, itemName: 'item2' },
-        { id: 3, itemName: 'item3' },
-        { id: 4, itemName: 'item4' },
+        { id: 1, itemName: 'item1', linkto: 'iphone14pro' },
+        { id: 2, itemName: 'item2', linkto: 'iphone14' },
+        { id: 3, itemName: 'item3', linkto: 'iphone14' },
+        { id: 4, itemName: 'item4', linkto: 'iphone14' }
     ];
 
     const test1 = [
-        { id: 1, itemName: 'item1' },
-        { id: 2, itemName: 'item2' },
-        { id: 3, itemName: 'item3' },
-        { id: 4, itemName: 'item4' },
-        { id: 5, itemName: 'item5' },
-        { id: 6, itemName: 'item6' }
+        { id: 1, itemName: 'item1', linkto: 'iphone14pro' },
+        { id: 2, itemName: 'item2', linkto: 'iphone14' },
+        { id: 3, itemName: 'item3', linkto: 'iphone14' },
+        { id: 4, itemName: 'item4', linkto: 'iphone14' },
+        { id: 5, itemName: 'item5', linkto: 'iphone14' },
+        { id: 6, itemName: 'item6', linkto: 'iphone14' }
     ];
 
     const test2 = [
-        { id: 1, itemName: 'item1' },
-        { id: 2, itemName: 'item2' },
-        { id: 3, itemName: 'item3' },
-        { id: 4, itemName: 'item4' },
-        { id: 5, itemName: 'item5' }
+        { id: 1, itemName: 'item1', linkto: 'iphone14pro' },
+        { id: 2, itemName: 'item2', linkto: 'iphone14' },
+        { id: 3, itemName: 'item3', linkto: 'iphone14' },
+        { id: 4, itemName: 'item4', linkto: 'iphone14' },
+        { id: 5, itemName: 'item5', linkto: 'iphone14' }
     ];
 
     const test3 = [
-        { id: 1, itemName: 'item1' },
-        { id: 2, itemName: 'item2' },
-        { id: 3, itemName: 'item3' },
-        { id: 4, itemName: 'item4' },
-        { id: 5, itemName: 'item5' },
-        { id: 6, itemName: 'item6' },
-        { id: 7, itemName: 'item7' }
+        { id: 1, itemName: 'item1', linkto: 'iphone14pro' },
+        { id: 2, itemName: 'item2', linkto: 'iphone14' },
+        { id: 3, itemName: 'item3', linkto: 'iphone14' },
+        { id: 4, itemName: 'item4', linkto: 'iphone14' },
+        { id: 5, itemName: 'item5', linkto: 'iphone14' },
+        { id: 6, itemName: 'item6', linkto: 'iphone14' },
+        { id: 7, itemName: 'item7', linkto: 'iphone14' }
     ];
 
     const slideLeft = () => {
@@ -78,7 +78,7 @@ function Itemslider({ title, rowID, toItem }) {
                             <div className='border-2 text-center p-24 rounded-xl'>
                                 {item.itemName}
                             </div>
-                            <button className='border-2 border-[rgba(0,0,0,.25)] hover:border-apple-blue w-full transition-all duration-300 ease-in-out rounded-full hover:text-apple-blue'>ซื้อ</button>
+                            <button className='border-2 border-[rgba(0,0,0,.25)] hover:border-apple-blue w-full transition-all duration-300 ease-in-out rounded-full hover:text-apple-blue'><Link to={item.linkto}>ซื้อ</Link></button>
                         </div>
                     ))}
                 </div>

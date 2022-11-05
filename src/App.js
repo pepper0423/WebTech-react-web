@@ -1,9 +1,10 @@
 import "./App.css";
 import Home from "./pages/home";
 import Accessories from "./pages/accessories";
-import Nav from './component/nav';
+import Nav from './components/nav';
 import { Routes, Route } from 'react-router-dom';
-import Foot from "./component/foot";
+import Foot from "./components/foot";
+import Iphone14Pro from './pages/Iphone14Pro';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="accessories" element={<Accessories/>}/>
+        <Route path="iphone14pro" element={<Iphone14Pro/>}/>
       </Routes>
       <footer>
         <Foot/>

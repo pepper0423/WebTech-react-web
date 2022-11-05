@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import Carousel from '../../component/carousel';
-import Itemslider from '../../component/itemslider';
+import Carousel from '../../components/carousel';
+import Itemslider from '../../components/itemslider';
 
 function Home() {
     return (

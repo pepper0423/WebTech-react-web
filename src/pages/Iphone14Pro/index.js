@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useStore } from '../../store/store';
 
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
@@ -42,7 +42,7 @@ const colorNameTH = {
 };
 
 const Iphone14Pro = () => {
-  const history = useHistory();
+  const history = useNavigate();
   const store = useStore();
 
   useEffect(() => {
