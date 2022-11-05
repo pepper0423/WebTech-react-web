@@ -13,8 +13,7 @@ function Home() {
                 <div className='container mx-auto py-12 px-60'>
                     <Itemslider title='แนะนำ' rowID='0' toItem='store' />
                     <Itemslider title='iPhone' rowID='1' toItem='iphone' />
-                    <Itemslider title='iPad' rowID='2' toItem='ipad' />
-                    <Itemslider title='อุปกรณ์เสริม' rowID='3' toItem='accessories' />
+                    <Itemslider title='อุปกรณ์เสริม' rowID='2' toItem='accessories' />
                 </div>
             </section>
         </div>
