@@ -1,29 +1,15 @@
-.navbar {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+@tailwind components;
 
-.navbar ul, .navbar li {
-    display: flex;
-    flex-direction: row;
-    padding: 8px;
-    margin: 0px 15px;
-    justify-content: center;
-    opacity: .8;
-}
+@layer components {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #f5f5f7;
-    font-size: 16px;
-    transition: .3s;
-}
+    .navbar ul, .navbar li {
+        @apply flex flex-row p-[8px] justify-center opacity-75;
+    }
 
-.navbar li:hover {
-    opacity: 1;
-}
-
-.navbar-icon {
-    height: 75%;
-    fill: #f5f5f7;
+    .navbar li {
+        @apply hover:opacity-100;
+    }
 }

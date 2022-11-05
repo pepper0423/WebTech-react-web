@@ -1,8 +1,11 @@
-.foot-container {
-    height: 480px;
-    background-color: #f5f5f7;
-}
+@tailwind components;
 
-.footer-text {
-    color: #6e6e73;
+@layer components {
+    .foot-container {
+        @apply h-[480px] bg-apple-white;
+    }
+    
+    .footer-text {
+        @apply text-apple-gray;
+    }
 }

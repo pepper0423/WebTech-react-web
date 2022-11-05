@@ -6,8 +6,8 @@ function Home() {
     return (
         <div>
             <section>
-                <div className='mx-auto text-center py-3 bg-[#f5f5f7]'>
-                    <span><NavLink to='store' className='text-sky-500'>เลือกซื้อสินค้าออนไลน์</NavLink> แล้วรับความช่วยเหลือจาก Specialist พร้อมบริการจัดส่งฟรีและอีกมากมาย</span>
+                <div className='mx-auto text-center py-3 bg-apple-white'>
+                    <span className='text-medium'><NavLink to='store' className='text-apple-blue hover:underline text-medium'>เลือกซื้อสินค้าออนไลน์</NavLink> แล้วรับความช่วยเหลือจาก Specialist พร้อมบริการจัดส่งฟรีและอีกมากมาย</span>
                 </div>
                 <Carousel />
                 <div className='container mx-auto py-12 px-60'>
