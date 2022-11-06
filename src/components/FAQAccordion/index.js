@@ -52,7 +52,7 @@ const Question = (props) => {
       expandIcon={<ExpandMoreIcon />}
       sx={{ paddingTop: '8px', paddingBottom: '8px' }}
     >
-      <p className="font-bold">{props.children}</p>
+      <p className="font-medium text-black hover:text-apple-blue">{props.children}</p>
     </AccordionSummary>
   );
 };

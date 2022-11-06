@@ -1,13 +1,11 @@
-.apple-btn {
-    background-color: #0071e3;
-}
-.apple-btn:hover {
-    background-color: #0077ed;
-}
+@tailwind components;
 
-.apple-btn-secondary {
-    background-color: #ebebeb;
-}
-.apple-btn-secondary:hover {
-    background-color: #ededed;
+@layer components {
+    .apple-btn {
+        @apply bg-[#0071e3] hover:bg-[#0077ed];
+    }
+    
+    .apple-btn-secondary {
+        @apply bg-[#ebebeb] hover:bg-[#ededed];
+    }  
 }

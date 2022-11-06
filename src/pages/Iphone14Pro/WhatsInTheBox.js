@@ -3,7 +3,7 @@ import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
-import 'swiper/components/pagination/pagination.min.css';
+import 'swiper/css/pagination';
 
 const Iphone14ProWITB = () => {
   return (
@@ -64,10 +64,10 @@ const Iphone14ProWITB = () => {
                 }}
               >
                 <img
-                  src="assets/whatsInTheBox/iphone13pro.jpg"
+                  src="assets/whatsInTheBox/iphone14pro.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
-                  alt="WITB iPhone 13 Pro"
+                  alt="WITB iPhone 14 Pro"
                 />
               </div>
               <div className="text-center mt-5">

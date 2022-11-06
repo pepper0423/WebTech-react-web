@@ -2,10 +2,10 @@
 
 @layer components {
     .foot-container {
-        @apply h-[480px] bg-apple-white;
+        @apply h-[400px] bg-apple-white;
     }
     
     .footer-text {
-        @apply text-apple-gray;
+        @apply text-[#1D1D1F];
     }
 }

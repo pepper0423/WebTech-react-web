@@ -1,6 +1,5 @@
 import React from 'react';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import { textAlign } from '@mui/system';
 
 const Iphone14ProFeatures = () => {
   return (

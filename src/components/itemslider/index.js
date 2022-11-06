@@ -2,42 +2,9 @@ import './itemslider.css';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
-function Itemslider({ title, rowID, toItem }) {
-    var itemMap;
+const Itemslider = (props) => {
 
-    const test0 = [
-        { id: 1, itemName: 'item1', linkto: 'iphone14pro' },
-        { id: 2, itemName: 'item2', linkto: 'iphone14' },
-        { id: 3, itemName: 'item3', linkto: 'iphone14' },
-        { id: 4, itemName: 'item4', linkto: 'iphone14' }
-    ];
-
-    const test1 = [
-        { id: 1, itemName: 'item1', linkto: 'iphone14pro' },
-        { id: 2, itemName: 'item2', linkto: 'iphone14' },
-        { id: 3, itemName: 'item3', linkto: 'iphone14' },
-        { id: 4, itemName: 'item4', linkto: 'iphone14' },
-        { id: 5, itemName: 'item5', linkto: 'iphone14' },
-        { id: 6, itemName: 'item6', linkto: 'iphone14' }
-    ];
-
-    const test2 = [
-        { id: 1, itemName: 'item1', linkto: 'iphone14pro' },
-        { id: 2, itemName: 'item2', linkto: 'iphone14' },
-        { id: 3, itemName: 'item3', linkto: 'iphone14' },
-        { id: 4, itemName: 'item4', linkto: 'iphone14' },
-        { id: 5, itemName: 'item5', linkto: 'iphone14' }
-    ];
-
-    const test3 = [
-        { id: 1, itemName: 'item1', linkto: 'iphone14pro' },
-        { id: 2, itemName: 'item2', linkto: 'iphone14' },
-        { id: 3, itemName: 'item3', linkto: 'iphone14' },
-        { id: 4, itemName: 'item4', linkto: 'iphone14' },
-        { id: 5, itemName: 'item5', linkto: 'iphone14' },
-        { id: 6, itemName: 'item6', linkto: 'iphone14' },
-        { id: 7, itemName: 'item7', linkto: 'iphone14' }
-    ];
+    const { title, rowID, toItem, itemArr } = props
 
     const slideLeft = () => {
         var slider = document.getElementById('slider' + rowID);
@@ -47,17 +14,6 @@ function Itemslider({ title, rowID, toItem }) {
         var slider = document.getElementById('slider' + rowID);
         slider.scrollLeft = slider.scrollLeft + 500;
     };
-
-    if (title == 'iPhone') {
-        itemMap = test1;
-    } else if (title == 'iPad') {
-        itemMap = test2;
-    } else if (title == 'อุปกรณ์เสริม') {
-        itemMap = test3;
-    } else if (title == 'แนะนำ') {
-        itemMap = test0;
-    }
-
 
     return (
         <div>
@@ -73,13 +29,8 @@ function Itemslider({ title, rowID, toItem }) {
                     size={60} color={'white'}
                 />
                 <div id={'slider' + rowID} className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative'>
-                    {itemMap.map((item) => (
-                        <div className='w-[240px] inline-block cursor-pointer relative p-2'>
-                            <div className='border-2 text-center p-24 rounded-xl'>
-                                {item.itemName}
-                            </div>
-                            <button className='border-2 border-[rgba(0,0,0,.25)] hover:border-apple-blue w-full transition-all duration-300 ease-in-out rounded-full hover:text-apple-blue'><Link to={item.linkto}>ซื้อ</Link></button>
-                        </div>
+                    {itemArr.map((item) => (
+                        <CardList item={ item }/>
                     ))}
                 </div>
                 <MdChevronRight
@@ -91,5 +42,25 @@ function Itemslider({ title, rowID, toItem }) {
         </div>
     );
 }
+
+const CardList = (props) => {
+    const { item } = props;
+
+    return (
+        <div key={item.id} className='w-[240px] inline-block cursor-pointer relative p-2'>
+            <div className='border-2 rounded-xl h-[240px]'>
+                {item.itemName}
+            </div>
+            <div className='absolute top-2 left-2 w-[225px] h-[240px] hover:bg-black/80 opacity-0 hover:opacity-100 text-white rounded-xl'>
+                <p className='white-space-normal text-big md:text-small font-bold flex justify-center items-center h-full text-center'>
+                    {item?.itemName}
+                </p>
+                <Link to={item.linkto}>
+                    <button className='top-36 left-20 w-12 h-8 text-gray-300 absolute border-2 border-[rgba(0,0,0,.25)] hover:border-apple-blue transition-all duration-300 ease-in-out rounded-full hover:text-apple-blue'>ซื้อ</button>
+                </Link>
+            </div>
+        </div>
+    );
+};
 
 export default Itemslider;
