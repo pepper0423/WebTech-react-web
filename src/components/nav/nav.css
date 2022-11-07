@@ -12,22 +12,37 @@
     .navbar li {
         @apply hover:opacity-100;
     }
-
-    .bag-popover-body {
-        @apply mt-[10px] w-[286px] bg-white px-20 border-[rgb(209,213,219)] border-[1px] rounded-sm;
-    }
-
-    .bag-popover-body::after {
-        -webkit-transform: rotate(45deg) skew(4deg, 4deg);
-        transform: rotate(45deg) skew(4deg, 4deg);
-        -webkit-transform-origin: 0% 0;
-        transform-origin: 0% 0;
-        z-index: 9 !important;
-        @apply left-1/2 content-none border-t-[1px] border-l-[1px] border-r-0 border-b-0 border-[rgb(209,213,219)] block absolute top-0 w-[12px] h-[12px]
-        bg-white;
-    }
-
-    .MuiPopover-paper {
-        @apply bg-transparent !important;
-    }
 }
+
+.MuiPopover-paper {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.bag-popover-body {
+    margin-top: 10px;
+    width: 285px;
+    background-color: rgb(255, 255, 255);
+    padding: 0 20px;
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: 16px;
+  }
+  
+  .bag-popover-body::after {
+    left: 50%;
+    border-top: 1px solid rgb(209, 213, 219);
+    border-left: 1px solid rgb(209, 213, 219);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 8px;
+    height: 10px;
+    -webkit-transform: rotate(45deg) skew(4deg, 4deg);
+    transform: rotate(45deg) skew(4deg, 4deg);
+    -webkit-transform-origin: 0% 0;
+    transform-origin: 0% 0;
+    z-index: 9 !important;
+    background-color: white;
+    margin-top: 5px;
+  }
+  

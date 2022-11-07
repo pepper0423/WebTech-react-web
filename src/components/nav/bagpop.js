@@ -36,14 +36,14 @@ const Bag = () => {
                         <Link to='bag'>
                             <div className='flex py-2 text-small text-apple-blue hover:underline'>
                                 <BsBag className='fill-apple-blue' />
-                                <span className='ml-2'>ถุง{!!bag ? `(${bag.length})` : ''}</span>
+                                <span className='ml-2'>ถุง {!!bag ? `(${bag.length})` : '(0)'}</span>
                             </div>
                         </Link>
-                        <div className='flex py-2 text-small text-apple-blue hover:underline'>
+                        <div className='flex py-2 text-small text-apple-blue hover:underline cursor-pointer'>
                             <BsBookmark className='fill-apple-blue' />
                             <span className='ml-2'>รายการโปรด</span>
                         </div>
-                        <div className='flex py-2 text-small text-apple-blue hover:underline'>
+                        <div className='flex py-2 text-small text-apple-blue hover:underline cursor-pointer'>
                             <BsBoxSeam className='fill-apple-blue' />
                             <span className='ml-2'>คำสั่งซื้อ</span>
                         </div>

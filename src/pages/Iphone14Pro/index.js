@@ -658,7 +658,7 @@ const Iphone14Pro = () => {
             </div>
           </div>
         </div>
-{/*         <Iphone14ProFeatures /> */}
+        <Iphone14ProFeatures />
         <Iphone14ProWITB />
         <Iphone14ProCompare />
       </div>
