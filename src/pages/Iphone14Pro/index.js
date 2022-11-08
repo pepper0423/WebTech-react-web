@@ -308,7 +308,7 @@ const Iphone14Pro = () => {
 
                 <VariantSelection id="variantColor" allowSelect={!!variantType}>
                   <div className="mb-2">
-                    <h4 className="text-xl font-bold">เลือกสี</h4>
+                    <h4 className="text-xl font-bold">เลือกสีฌปรดของคุณ</h4>
                   </div>
                   <div
                     id="variantColorOptions"

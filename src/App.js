@@ -4,6 +4,7 @@ import Accessories from "./pages/accessories";
 import { Routes, Route } from 'react-router-dom';
 import Foot from "./components/foot";
 import Iphone14Pro from './pages/Iphone14Pro';
+import Iphone14 from './pages/Iphone14';
 
 const App =()=> {
   return (
@@ -12,6 +13,7 @@ const App =()=> {
         <Route path="/" element={<Home />}/>
         <Route path="accessories" element={<Accessories/>}/>
         <Route path="iphone14pro" element={<Iphone14Pro/>}/>
+        <Route path="iphone14" element={<Iphone14/>}/>
       </Routes>
       <Foot/>
     </div>

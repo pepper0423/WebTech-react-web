@@ -26,7 +26,7 @@ const Home = () => {
         { id: 1, itemName: 'iphone 14 pro max', linkto: '/iphone14pro' },
         { id: 2, itemName: 'iphone 14 pro', linkto: '/iphone14pro' },
         { id: 3, itemName: 'iphone 14', linkto: '/iphone14' },
-        { id: 4, itemName: 'iphone 14 plus', linkto: '/iphone14plus' },
+        { id: 4, itemName: 'iphone 14 plus', linkto: '/iphone14' },
         { id: 5, itemName: 'ipad gen 10', linkto: 'ipadgen10' },
         { id: 6, itemName: 'apel pencil 2nd gen', linkto: 'apelpencil2ndgen' },
         { id: 7, itemName: 'apel keyboard', linkto: 'apelkeyboard' },
@@ -37,7 +37,7 @@ const Home = () => {
         { id: 1, itemName: 'iphone 14 pro max', linkto: '/iphone14pro' },
         { id: 2, itemName: 'iphone 14 pro', linkto: '/iphone14pro' },
         { id: 3, itemName: 'iphone 14', linkto: '/iphone14' },
-        { id: 4, itemName: 'iphone 14 plus', linkto: '/iphone14plus' }
+        { id: 4, itemName: 'iphone 14 plus', linkto: '/iphone14' }
     ];
 
     const accessData = [
