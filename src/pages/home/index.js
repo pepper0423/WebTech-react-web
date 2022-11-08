@@ -3,47 +3,29 @@ import Carousel from '../../components/carousel';
 import Itemslider from '../../components/itemslider';
 import Nav from '../../components/nav';
 
-const Ipadgen10 = () => {
-    return (
-        <div className="bg-apple-white relative">
-            <div>
-                <img alt="" src="../assets/image/homepage/ipad_hero.jpg" className="mx-auto max-w-full"/>
-            </div>
-            <div className="text-center absolute ml-[56%] top-[48%]">
-                <h2 className="text-5xl font-semibold">iPad</h2>
-                <p className="text-3xl mt-2 text-black">รักเลย วาดเลย เอาใจไปเลย</p>
-            </div>
-            <div className="mt-5 text-center text-xl text-apple-blue absolute ml-[60%] top-[55%]">
-                <Link to="/ipad" className="hover:underline mr-4">ดูเพิ่มเติม &#10095;</Link>
-                <Link to="/ipadgen10" className="hover:underline">ซื้อ &#10095;</Link>
-            </div>
-        </div>
-    );
-};
-
 const Home = () => {
     const recommendData = [
-        { id: 1, itemName: 'iphone 14 pro max', linkto: '/iphone14pro' },
-        { id: 2, itemName: 'iphone 14 pro', linkto: '/iphone14pro' },
-        { id: 3, itemName: 'iphone 14', linkto: '/iphone14' },
-        { id: 4, itemName: 'iphone 14 plus', linkto: '/iphone14plus' },
-        { id: 5, itemName: 'ipad gen 10', linkto: 'ipadgen10' },
-        { id: 6, itemName: 'apel pencil 2nd gen', linkto: 'apelpencil2ndgen' },
-        { id: 7, itemName: 'apel keyboard', linkto: 'apelkeyboard' },
-        { id: 8, itemName: 'airpod pro', linkto: 'airpodpro' }
+        { id: 1, itemName: 'Iphone 14 Pro Max', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iphone-14-pro_overview.png' },
+        { id: 2, itemName: 'Iphone 14 Pro', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iphone-14-pro_overview_1.png' },
+        { id: 3, itemName: 'Iphone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_1.png' },
+        { id: 4, itemName: 'Iphone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png' },
+        { id: 5, itemName: 'Ipad รุ่นที่ 10', linkto: 'ipadgen10', itemPic: '../assets/image/homepage/ipad_gen_10_overview.jpg' },
+        { id: 6, itemName: 'Apel Pencil รุ่นที่ 2', linkto: 'apelpencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
+        { id: 7, itemName: 'Magic Keyboard', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
+        { id: 8, itemName: 'Airpod Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' }
     ];
 
     const iphoneData = [
-        { id: 1, itemName: 'iphone 14 pro max', linkto: '/iphone14pro' },
-        { id: 2, itemName: 'iphone 14 pro', linkto: '/iphone14pro' },
-        { id: 3, itemName: 'iphone 14', linkto: '/iphone14' },
-        { id: 4, itemName: 'iphone 14 plus', linkto: '/iphone14plus' }
+        { id: 1, itemName: 'Iphone 14 Pro Max', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iphone-14-pro_overview.png' },
+        { id: 2, itemName: 'Iphone 14 Pro', linkto: '/iphone14pro', itemPic:  '../assets/image/homepage/iphone-14-pro_overview_1.png'},
+        { id: 3, itemName: 'Iphone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_1.png' },
+        { id: 4, itemName: 'Iphone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png' }
     ];
 
     const accessData = [
-        { id: 1, itemName: 'apel pencil 2nd gen', linkto: 'apelpencil2ndgen' },
-        { id: 2, itemName: 'apel keyboard', linkto: 'apelkeyboard' },
-        { id: 3, itemName: 'airpod pro', linkto: 'airpodpro' }
+        { id: 1, itemName: 'Apel Pencil รุ่นที่ 2', linkto: 'apelpencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
+        { id: 2, itemName: 'Magic Keyboard', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
+        { id: 3, itemName: 'Airpod Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' }
     ];
 
     return (
@@ -58,9 +40,6 @@ const Home = () => {
                 <Carousel />
                 <div className='container mx-auto py-12 px-60'>
                     <Itemslider title='แนะนำ' rowID='0' toItem='store' itemArr={recommendData} />
-                </div>
-                <Ipadgen10 />
-                <div className='container mx-auto py-12 px-60'>
                     <Itemslider title='iPhone' rowID='1' toItem='iphone' itemArr={iphoneData} />
                     <Itemslider title='อุปกรณ์เสริม' rowID='2' toItem='accessories' itemArr={accessData} />
                 </div>
