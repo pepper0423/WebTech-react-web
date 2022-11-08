@@ -19,7 +19,12 @@ const Itemslider = (props) => {
         <div>
             <div className='group'>
                 <h3 className='text-3xl cursor-default p-4'>{title} &nbsp;
-                    <Link to={toItem} className='text-xl text-[#2997FF] cursor-pointer absolute transition-all duration-300 translate-x-[-90px] group-hover:translate-x-0 translate-y-1 group-hover:opacity-100 opacity-0 ease-in-out'>ดูเพิ่มเติม</Link><span className='text-xl text-[#2997FF] cursor-pointer translate-y-1 group-hover:translate-x-[90px] transition-all duration-300 absolute ease-in-out'>&#10095;</span>
+                    <Link to={toItem} className='text-xl text-[#2997FF] cursor-pointer absolute transition-all duration-700 translate-x-[-90px] group-hover:translate-x-0 translate-y-1 group-hover:opacity-100 opacity-0 ease-in-out'>
+                        ดูเพิ่มเติม
+                    </Link>
+                    <span className='text-xl text-[#2997FF] cursor-pointer translate-y-1 group-hover:translate-x-[90px] transition-all duration-500 absolute ease-in-out'>
+                        &#10095;
+                    </span>
                 </h3>
             </div>
             <div className='relative flex items-center group'>
