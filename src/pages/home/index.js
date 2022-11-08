@@ -21,7 +21,7 @@ const Home = () => {
         { id: 3, itemName: 'Iphone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_1.png' },
         { id: 4, itemName: 'Iphone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png' }
     ];
-
+    
     const accessData = [
         { id: 1, itemName: 'Apel Pencil รุ่นที่ 2', linkto: 'apelpencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
         { id: 2, itemName: 'Magic Keyboard', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
