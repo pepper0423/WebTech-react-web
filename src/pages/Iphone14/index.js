@@ -566,7 +566,7 @@ const Iphone14 = () => {
                   })}
                   *
                 </p>
-                <p className="text-sm text-apple-link-blue cursor-pointer hover:underline">
+                <p className="text-sm text-apple-blue cursor-pointer hover:underline">
                   ฿
                   {Number(price / 10).toLocaleString('en', {
                     minimumFractionDigits: 2,
