@@ -660,7 +660,7 @@ const Iphone14 = () => {
           <h2 className="text-4xl font-semibold text-center mt-20">
           Reviews
           </h2>
-          <video width="100%" height="auto" controls="controls">
+          <video width="100%" height="auto" controls="controls" controlsList="nodownload" oncontextmenu="return false;">
             <source src="assets/features/iphone14/Review_iphone14.mp4" type="video/mp4"/>
           </video>
         </div>
