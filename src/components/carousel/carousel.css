@@ -9,12 +9,11 @@ iframe {
     left: 20%;
 }
 
-.floatin h3, p {
+.floatin h2, p {
     color: white;
-    line-height: 0.9
 }
 
-.floatin h3 {
+.floatin h2 {
     font-size: 40px;
 }
 
