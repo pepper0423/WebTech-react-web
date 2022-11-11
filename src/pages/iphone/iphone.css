@@ -1,0 +1,80 @@
+.bg-iPhone14{
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 5%;
+}
+.pro{
+    width: 240px;
+}
+.bg-gray{
+    background-color: #fbfbfd;
+    overflow: hidden;
+}
+
+.bg-iPhone14Pro{
+    background-color: #000000;
+    padding-top: 5%;
+}
+
+.color-iPhone13{
+    color: #fec1eb;
+}
+.fill{
+    fill: red;
+}
+.iphone14txt{
+    color: white;
+}
+.iPhonebody{
+    justify-content: center;
+    text-align: center;
+    
+}
+.a{
+    color: #878686;
+    font-size: 30px;
+    margin-right: 5px;
+}
+.b{
+    font-weight: 900px;
+}
+.c{
+    font-size: 60px;
+    font-weight: 1000;
+}
+.d{
+    background: rgb(95,140,166);
+    background: linear-gradient(90deg, rgba(95,140,166,1) 10%, rgba(148,184,226,1) 30%, rgba(196,143,229,1) 55%, rgba(187,79,92,1) 60%, rgba(223,68,75,1) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.e{
+    background: rgb(195,0,255);
+    background: linear-gradient(0deg, rgba(195,0,255,1) 25%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bg-iPhonecompare{
+    padding-top: 5%;
+    background-color: white;
+}
+.pichover{
+    transition: transform 1s;
+}
+.pichover:hover{
+    transform: scale(1.1); 
+}
+.largepicicon{
+    width: 110px;
+}
+.dark{
+    filter: invert(1);
+}
+.nospace{
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+.bigger{
+    width: 110%;
+}
