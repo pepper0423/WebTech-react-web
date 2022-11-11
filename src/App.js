@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Foot from "./components/foot";
 import Iphone14Pro from './pages/Iphone14Pro';
 import Iphone14 from './pages/Iphone14';
+import Iphone from './pages/iphone';
 
 const App =()=> {
   return (
