@@ -1,6 +1,7 @@
 import './iphone.css';
 import Nav from '../../components/nav';
 import Iphone14ProCompare from './Compare';
+import { Link } from 'react-router-dom';
 
 function Iphone() {
     return (
@@ -64,9 +65,11 @@ function Iphone() {
                                 <br></br>
                                 <p className="mt-4 font-semibold text-black">ระบบเซลลูลาร์ 5G ที่เร็วสุดแรง³</p>    </div>
                         </div>
+                        <Link to='/iphone14'>
                         <button class="rounded-full bg-stone-800 w-20">
                             <h1 className='text-white'>ซื้อเลย</h1>
                         </button>
+                        </Link>
                     </div>
 
                 </div>
@@ -131,9 +134,11 @@ function Iphone() {
                                 />
                                 <p className="mt-4 font-semibold text-black">Dynamic Island <br></br>วิธีใหม่ในการโต้ตอบกับ iPhone</p>    </div>
                         </div>
-                        <button class="rounded-full bg-stone-800 w-20">
-                            <h1 className='text-white'>ซื้อเลย</h1>
-                        </button>
+                        <Link to='/iphone14pro'>
+                            <button class="rounded-full bg-stone-800 w-20">
+                                <h1 className='text-white'>ซื้อเลย</h1>
+                            </button>
+                        </Link>
                     <br></br>
                     </div>
 
