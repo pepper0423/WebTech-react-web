@@ -118,7 +118,7 @@ const Iphone14ProFeatures = () => {
       </div>
       <p className="text-center text-lg font-medium mt-14">
         <span
-          className="text-apple-link-blue hover:underline"
+          className="text-apple-blue hover:underline"
         >
           ดูเพิ่มเติมเกี่ยวกับ iPhone 14 Pro
           <KeyboardArrowRightIcon />

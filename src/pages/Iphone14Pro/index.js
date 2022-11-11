@@ -308,7 +308,7 @@ const Iphone14Pro = () => {
 
                 <VariantSelection id="variantColor" allowSelect={!!variantType}>
                   <div className="mb-2">
-                    <h4 className="text-xl font-bold">เลือกสี</h4>
+                    <h4 className="text-xl font-bold">เลือกสีฌปรดของคุณ</h4>
                   </div>
                   <div
                     id="variantColorOptions"
@@ -658,7 +658,7 @@ const Iphone14Pro = () => {
             </div>
           </div>
         </div>
-{/*         <Iphone14ProFeatures /> */}
+        <Iphone14ProFeatures />
         <Iphone14ProWITB />
         <Iphone14ProCompare />
       </div>

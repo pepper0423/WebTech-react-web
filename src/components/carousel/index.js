@@ -1,16 +1,19 @@
 import './carousel.css';
+import { Link } from 'react-router-dom';
 
 function Carousel() {
     return (
-        <div className='max-w-full'>
+        <div className='max-w-full bg-gray-900'>
             <div>
-                <iframe width='100%' src="https://www.youtube.com/embed/4wKU9oIXnTI?version=3&autoplay=1&loop=1&controls=0&disablekb=1&playlist=4wKU9oIXnTI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                <video autoPlay loop width='80%' className='mx-auto brightness-75'>
+                    <source src="../assets/image/homepage/iphonecarouselvid.mp4" type='video/mp4'/>
+                </video>
             </div>
             <div className='floatin'>
-                <h3>Title</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href='#' id='buy'>ซื้อ &#10095;</a>
-                <a href='#' id='seemore'>ข้อมูลเพิ่มเติม &#10095;</a>
+                <h2><strong>iPhone 14 Pro</strong></h2>
+                <p>ที่สุดของ iPhone</p>
+                <Link to="/iphone14pro" id='buy'>ซื้อ &#10095;</Link>
+                <Link to="/iphone" className="mr-4" id='seemore'>ดูเพิ่มเติม &#10095;</Link>
             </div>
         </div>
     );
