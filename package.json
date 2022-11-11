@@ -5,10 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-<<<<<<< HEAD
-=======
     "@fontsource/roboto": "^4.5.8",
->>>>>>> 807cabbb3ecab31de4c1da7578f8aea226e139f2
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.12",
     "@mui/styled-engine-sc": "^5.10.6",
@@ -20,7 +17,7 @@
     "react-icons": "^4.6.0",
     "react-router": "^6.4.2",
     "react-router-dom": "^6.0.0-beta.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
     "swiper": "^8.4.4",
     "web-vitals": "^2.1.4"
