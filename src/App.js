@@ -14,6 +14,7 @@ const App =()=> {
         <Route path="accessories" element={<Accessories/>}/>
         <Route path="iphone14pro" element={<Iphone14Pro/>}/>
         <Route path="iphone14" element={<Iphone14/>}/>
+        <Route path="iphone" element={<Iphone/>}/>
       </Routes>
       <Foot/>
     </div>
