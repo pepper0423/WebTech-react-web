@@ -6,7 +6,7 @@ import Itemslider from '../../components/itemslider';
 
 
 
-const IPad = () => {
+const Ipad = () => {
     const accessData = [
         { id: 1, itemName: 'Apel Pencil รุ่นที่ 2', linkto: 'apelpencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
         { id: 2, itemName: 'Magic Keyboard', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
@@ -103,4 +103,4 @@ const IPad = () => {
     );
 }
 
-export default IPad;
+export default Ipad;
