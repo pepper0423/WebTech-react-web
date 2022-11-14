@@ -9,7 +9,7 @@ const Home = () => {
         { id: 2, itemName: 'iPhone 14 Pro', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iphone-14-pro_overview_1.png' },
         { id: 3, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_1.png' },
         { id: 4, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png' },
-        { id: 5, itemName: 'Ipad รุ่นที่ 10', linkto: 'ipadgen10', itemPic: '../assets/image/homepage/ipad_gen_10_overview.jpg' },
+        { id: 5, itemName: 'Ipad รุ่นที่ 10', linkto: '/ipad', itemPic: '../assets/image/homepage/ipad_gen_10_overview.jpg' },
         { id: 6, itemName: 'Apel Pencil รุ่นที่ 2', linkto: 'apelpencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
         { id: 7, itemName: 'Magic Keyboard', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
         { id: 8, itemName: 'Airpod Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' }
