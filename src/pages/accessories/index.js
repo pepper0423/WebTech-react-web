@@ -1,5 +1,5 @@
-function Accessories() {
-
+const Accessories =()=> {
+    
 }
 
 export default Accessories;
