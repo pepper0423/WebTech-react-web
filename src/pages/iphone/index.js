@@ -1,6 +1,6 @@
 import './iphone.css';
 import Nav from '../../components/nav';
-import Iphone14ProCompare from './Compare';
+import Service from './Service';
 import { Link } from 'react-router-dom';
 
 function Iphone() {
@@ -122,7 +122,7 @@ function Iphone() {
                                 />
                                 <p className="mt-4 font-semibold text-black">ระบบกล้องระดับโปร</p>
                                 <br></br>
-                                <p className="font-semibold text-gray-400">
+                                <p className="mt-4 font-semibold text-black">
                                     กล้องหลักความละเอียด 48MP
                                 </p>
                             </div>
@@ -132,7 +132,12 @@ function Iphone() {
                                     className="mx-auto largepicicon "
                                     src="assets/compareProduct/iphone/dynamic-iphone14Pro.jpg"
                                 />
-                                <p className="mt-4 font-semibold text-black">Dynamic Island <br></br>วิธีใหม่ในการโต้ตอบกับ iPhone</p>    </div>
+                                <p className="mt-4 font-semibold text-black">Dynamic Island</p>    
+                                <br></br>
+                                <p className="mt-4 font-semibold text-black">
+                                วิธีใหม่ในการโต้ตอบกับ iPhone
+                                </p>
+                                </div>
                         </div>
                         <Link to='/iphone14pro'>
                             <button class="rounded-full bg-stone-800 w-20">
@@ -146,8 +151,13 @@ function Iphone() {
             </div>
             </div>
             </div>
-            <Iphone14ProCompare />
-
+            <center>
+            <div className='sizing'>
+                
+            <Service />
+            
+            </div>
+            </center>
         </div>
     );
 }

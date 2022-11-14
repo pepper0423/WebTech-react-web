@@ -505,7 +505,7 @@ const Iphone14 = () => {
                     >
                       <div className="divide-y divide-gray-300">
                         <div className="flex flex-row justify-between items-center mb-3">
-                        <p className="text-lg font-medium text-black flex"><FaAppleAlt className='mr-2 translate-y-1 fill-red-600'/>ApelCare+</p>
+                        <p className="text-lg font-medium text-black flex"><FaAppleAlt className='mr-2 translate-y-1 fill-red-600'/>AppleCare+</p>
                           <span>฿7,790.00</span>
                         </div>
                         <div>
@@ -523,7 +523,7 @@ const Iphone14 = () => {
                       </div>
                     </VariantOption>
                   </div>
-                </VariantSelection>
+                </VariantSelection> 
               </div>
             </div>
             <div
