@@ -26,8 +26,8 @@ const Home = () => {
         { id: 1, itemName: 'Apel Pencil รุ่นที่ 2', linkto: 'apelpencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
         { id: 2, itemName: 'Magic Keyboard สำหรับ iPad', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
         { id: 3, itemName: 'Airpods Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' },
-        { id: 4, itemName: 'อะแดปเตอร์แปลงไฟ USB-C ขนาด 20 วัตต์', linkto: 'airpodpro', itemPic: '../assets/image/homepage/adapter.jpg' },
-        { id: 5, itemName: 'อะแดปเตอร์ Digital AV แบบ Lightning', linkto: 'airpodpro', itemPic: '../assets/image/homepage/digitalAV.jpg' }
+        { id: 4, itemName: 'อะแดปเตอร์แปลงไฟ USB-C ขนาด 20 วัตต์', linkto: 'adapter', itemPic: '../assets/image/homepage/adapter.jpg' },
+        { id: 5, itemName: 'อะแดปเตอร์ Digital AV แบบ Lightning', linkto: 'digitalAV', itemPic: '../assets/image/homepage/digitalAV.jpg' }
     ];
 
     return (
