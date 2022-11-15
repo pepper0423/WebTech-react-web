@@ -24,6 +24,7 @@ function App() {
         <Route path="ipadgen10" element={<Ipadgen10 />} />
         <Route path="Bag" element={<Bag />} />
         <Route path="help" element={<Help />} />
+        <Route path="bag" element={<Bag />} />
       </Routes>
       <Foot />
     </div>

@@ -11,7 +11,7 @@ const BagFAQ = () => {
       <QuestionItem>
         <Question>ฉันจะได้รับสินค้าเมื่อไหร่</Question>
         <Answer>
-          <p>
+          <p className='text-black'>
             เมื่อระบุรหัสไปรษณีย์แล้ว
             คุณจะได้รับแจ้งวันที่ส่งมอบหรือวันที่พร้อมรับสินค้าโดยประมาณ
             คุณจะได้รับวันที่ขั้นสุดท้ายหลังจากส่งคำสั่งซื้อ
@@ -20,7 +20,7 @@ const BagFAQ = () => {
               href="https://www.apple.com/th/shop/help/shipping_delivery"
               target="_blank"
               rel="noreferrer"
-              className="text-apple-link-blue hover:underline"
+              className="text-apple-blue hover:underline"
             >
               ดูเพิ่มเติมเกี่ยวกับการส่งมอบและการรับสินค้า Apple ที่ร้าน
             </a>
@@ -32,7 +32,7 @@ const BagFAQ = () => {
           ฉันสามารถไปรับสินค้าด้วยตัวเองที่ Apple Store ได้หรือไม่
         </Question>
         <Answer>
-          <p>
+          <p className='text-black'>
             ได้ หากคุณเลือกรับด้วยตัวเอง
             คุณจะต้องเลือกร้านและวันที่ที่ต้องการรับสินค้าในขั้นตอนการชำระเงิน
             แต่ไม่ใช่สินค้าทุกรายการที่พร้อมให้คุณมารับด้วยตัวเอง
@@ -41,7 +41,7 @@ const BagFAQ = () => {
               href="https://www.apple.com/th/shop/help/shipping_delivery"
               target="_blank"
               rel="noreferrer"
-              className="text-apple-link-blue hover:underline"
+              className="text-apple-blue hover:underline"
             >
               ดูเพิ่มเติมเกี่ยวกับการส่งมอบและการรับสินค้า Apple ที่ร้าน
             </a>
@@ -54,7 +54,7 @@ const BagFAQ = () => {
           ของฉันกำลังดำเนินการเพื่อให้ลูกค้าเลือกซื้อสินค้าและรับบริการที่ปลอดภัยยิ่งขึ้นได้อย่างไร
         </Question>
         <Answer>
-          <p>
+          <p className='text-black'>
             เราใส่ใจในความปลอดภัยเป็นอันดับแรกโดยใช้มาตรการพิเศษเพื่อให้ลูกค้าของเรามั่นใจในสภาพแวดล้อมที่สะอาดและปลอดภัย
             ซึ่งประกอบด้วยขั้นตอนการตรวจสอบสุขภาพ การขอให้ใช้หน้ากากปิดบังใบหน้า
             และการจำกัดจำนวนผู้เข้าชมภายในร้าน
@@ -64,7 +64,7 @@ const BagFAQ = () => {
               href="https://www.apple.com/th/retail"
               target="_blank"
               rel="noreferrer"
-              className="text-apple-link-blue hover:underline"
+              className="text-apple-blue hover:underline"
             >
               ค้นหาร้าน
             </a>
@@ -74,7 +74,7 @@ const BagFAQ = () => {
       <QuestionItem>
         <Question>ตัวเลือกของการชำระเงินมีอะไรบ้าง</Question>
         <Answer>
-          <p>
+          <p className='text-black'>
             เรายินดีรับชำระค่าสินค้าด้วยบัตรเครดิตเกือบทุกประเภท
             รวมถึงบัตรของขวัญ Apple Store การชำระเงินวิธีอื่นที่เรายินดีรับ
             ได้แก่ การโอนเงินทางธนาคารผ่านเอทีเอ็ม เคาท์เตอร์เซอร์วิส
@@ -85,7 +85,7 @@ const BagFAQ = () => {
               href="https://www.apple.com/th/shop/help/payments"
               target="_blank"
               rel="noreferrer"
-              className="text-apple-link-blue hover:underline"
+              className="text-apple-blue hover:underline"
             >
               ดูเพิ่มเติมเกี่ยวกับการชำระเงินและราคาสินค้า Apple
             </a>
@@ -95,7 +95,7 @@ const BagFAQ = () => {
       <QuestionItem>
         <Question>Apple มีข้อเสนอส่วนลดส่งเสริมการศึกษาหรือไม่</Question>
         <Answer>
-          <p>
+          <p className='text-black'>
             มี Apple ยังมีข้อเสนอราคาพิเศษสำหรับนักเรียนนักศึกษา อาจารย์
             นักจัดการ รวมถึงเจ้าหน้าที่ด้านการศึกษาอีกด้วย
             หากคุณคิดว่าคุณอยู่ในเกณฑ์ดังกล่าว โปรดไปที่{' '}
@@ -103,7 +103,7 @@ const BagFAQ = () => {
               href="https://www.apple.com/th-edu/store"
               target="_blank"
               rel="noreferrer"
-              className="text-apple-link-blue hover:underline"
+              className="text-apple-blue hover:underline"
             >
               ร้านเพื่อการศึกษาของ Apple
             </a>{' '}
@@ -114,14 +114,14 @@ const BagFAQ = () => {
       <QuestionItem>
         <Question>ตัวเลือกบริการทางการเงินมีอะไรบ้าง</Question>
         <Answer>
-          <p>
+          <p className="text-black">
             คุณสามารถจ่ายค่าสินค้าด้วยวิธีผ่อนชำระโดยใช้บัตรเครดิตที่กำหนดไว้ได้ในขั้นตอนการชำระเงิน
             จำเป็นต้องมียอดสั่งซื้อขั้นต่ำ{' '}
             <a
               href="https://www.apple.com/th/shop/help/payments"
               target="_blank"
               rel="noreferrer"
-              className="text-apple-link-blue hover:underline"
+              className="text-apple-blue hover:underline"
             >
               ดูเพิ่มเติมเกี่ยวกับการชำระเงินและราคาสินค้า Apple
             </a>
@@ -133,7 +133,7 @@ const BagFAQ = () => {
           ฉันสามารถเลือกซื้อสินค้าให้ครอบครัวและเพื่อนที่อยู่ต่างประเทศหรือต่างภูมิภาคได้หรือไม่
         </Question>
         <Answer>
-          <p>
+          <p className='text-black'>
             ไปที่ร้านออนไลน์ของประเทศหรือภูมิภาคที่คุณต้องการใช้บริการส่งมอบสินค้าเพื่อส่งคำสั่งซื้อของคุณ
             คุณสามารถโทร 001‑800‑65‑6957 เพื่อขอข้อมูลเพิ่มเติมได้
           </p>
@@ -144,13 +144,13 @@ const BagFAQ = () => {
           ฉันสามารถขอให้ส่งมอบสินค้าไปที่อื่นที่ไม่ใช่บ้านของฉันได้หรือไม่
         </Question>
         <Answer>
-          <p>
+          <p className='text-black'>
             ได้ คุณสามารถระบุที่อยู่ที่ต้องการได้ในขั้นตอนการชำระเงิน{' '}
             <a
               href="https://www.apple.com/th/shop/help/shipping_delivery"
               target="_blank"
               rel="noreferrer"
-              className="text-apple-link-blue hover:underline"
+              className="text-apple-blue hover:underline"
             >
               ดูเพิ่มเติมเกี่ยวกับการส่งมอบและการรับสินค้า Apple ที่ร้าน
             </a>

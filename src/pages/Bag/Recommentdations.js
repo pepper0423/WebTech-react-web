@@ -17,10 +17,10 @@ const Recommendations = () => {
               alt=""
               style={{ maxWidth: '194px' }}
             />
-            <p className="mt-5 text-lg font-medium">
+            <p className="mt-5 text-lg font-medium text-black">
               อะแดปเตอร์แปลงไฟ USB-C ขนาด 20 วัตต์
             </p>
-            <p className="mb-10">฿690.00</p>
+            <p className="mb-10 text-black">฿690.00</p>
           </div>
           <div className="mt-auto">
             <AppleButton className="px-5 w-full py-3 rounded-xl">
@@ -36,8 +36,8 @@ const Recommendations = () => {
               alt=""
               style={{ maxWidth: '194px' }}
             />
-            <p className="mt-5 text-lg font-medium">ที่ชาร์จ MagSafe</p>
-            <p className="mb-10">฿1,490.00</p>
+            <p className="mt-5 text-lg font-medium text-black">ที่ชาร์จ MagSafe</p>
+            <p className="mb-10 text-black">฿1,490.00</p>
           </div>
           <div className="mt-auto">
             <AppleButton className="px-5 w-full py-3 rounded-xl">
@@ -54,8 +54,8 @@ const Recommendations = () => {
               style={{ maxWidth: '194px' }}
             />
             <p className="mt-5 text-xs text-red-600">ใหม่</p>
-            <p className="text-lg font-medium">ผ้าเช็ดรอย</p>
-            <p className="mb-10">฿690.00</p>
+            <p className="text-lg font-medium text-black">ผ้าเช็ดรอย</p>
+            <p className="mb-10 text-black">฿690.00</p>
           </div>
           <div className="mt-auto">
             <AppleButton className="px-5 w-full py-3 rounded-xl">
@@ -64,7 +64,7 @@ const Recommendations = () => {
           </div>
         </div>
       </div>
-      <p className="mt-12 text-center text-apple-link-blue hover:underline">
+      <p className="mt-12 text-center text-apple-blue hover:underline">
         แสดงผลิตภัณฑ์เพิ่มเติม
         <KeyboardArrowDown sx={{ fontSize: '18px' }} />
       </p>

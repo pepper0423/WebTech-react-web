@@ -21,8 +21,8 @@ const NewArrivals = () => {
         >
           <div>
             <h6 className="text-3xl font-medium">สินค้าเข้าใหม่</h6>
-            <p className="text-lg">ลองดูอุปกรณ์เสริมล่าสุด</p>
-            <p className="text-apple-link-blue hover:underline">
+            <p className="text-lg text-black">ลองดูอุปกรณ์เสริมล่าสุด</p>
+            <p className="text-apple-blue hover:underline">
               เลือกซื้อ
               <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
             </p>
@@ -43,8 +43,8 @@ const NewArrivals = () => {
         <div className="pt-10 flex flex-col items-center justify-center text-center">
           <div>
             <h6 className="text-3xl font-medium">สินค้าเข้าใหม่</h6>
-            <p className="text-lg">ลองดูอุปกรณ์เสริมล่าสุด</p>
-            <p className="text-apple-link-blue hover:underline">
+            <p className="text-lg text-black">ลองดูอุปกรณ์เสริมล่าสุด</p>
+            <p className="text-apple-blue hover:underline">
               เลือกซื้อ
               <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
             </p>
