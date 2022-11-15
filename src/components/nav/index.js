@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { FaAppleAlt } from 'react-icons/fa';
 import './nav.css'
-import Bag from './bagpop';
+import Bagpop from './bagpop';
 
 const Nav =(props)=> {
     return (
@@ -15,7 +15,7 @@ const Nav =(props)=> {
                         <li><NavLink to='/ipad' className='text-small cursor-pointer text-apple-white transition-all duration-300'>iPad</NavLink></li>
                         <li><NavLink to='/accessories' className='text-small cursor-pointer text-apple-white transition-all duration-300'>อุปกรณ์เสริม</NavLink></li>
                         <li><NavLink to='/' className='text-small cursor-pointer text-apple-white transition-all duration-300'>บริการช่วยเหลือ</NavLink></li>
-                        <li className='text-big cursor-pointer text-[#FBFBFD] transition-all duration-300'><Bag /></li>
+                        <li className='text-big cursor-pointer text-[#FBFBFD] transition-all duration-300'><Bagpop /></li>
                     </ul>
                 </nav>
             </div>

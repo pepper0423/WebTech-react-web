@@ -6,7 +6,7 @@ import AppleButton from '../AppleButton';
 import { Link } from 'react-router-dom';
 import './nav.css';
 
-const Bag = () => {
+const Bagpop = () => {
     const store = useStore();
     const { bag } = store || {};
 
@@ -33,7 +33,7 @@ const Bag = () => {
                     <BagItems bag={bag} />
                     <AppleButton className='w-full'>ชำระเงิน</AppleButton>
                     <div className='my-3 divide-y divide-gray-300'>
-                        <Link to='bag'>
+                        <Link to='/bag'>
                             <div className='flex py-2 text-small text-apple-blue hover:underline'>
                                 <BsBag className='fill-apple-blue' />
                                 <span className='ml-2'>ถุง {!!bag ? `(${bag.length})` : '(0)'}</span>
@@ -92,4 +92,4 @@ const BagItems = (props) => {
     }
 };
 
-export default Bag;
+export default Bagpop;

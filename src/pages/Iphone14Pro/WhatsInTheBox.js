@@ -29,7 +29,7 @@ const Iphone14ProWITB = () => {
           </div>
           <div>
             <img
-              src="assets/whatsInTheBox/lightning-cable.jpg"
+              src="../assets/whatsInTheBox/iphone-14-pro-cable-witb-202209.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
               alt="WITB Lightning Cable"
@@ -84,7 +84,7 @@ const Iphone14ProWITB = () => {
                 }}
               >
                 <img
-                  src="assets/whatsInTheBox/lightning-cable.jpg"
+                  src="../assets/whatsInTheBox/iphone-14-pro-cable-witb-202209.jpg"
                   className="mx-auto"
                   style={{ height: '330px' }}
                   alt="WITB Lightning Cable"
