@@ -24,8 +24,10 @@ const Home = () => {
     
     const accessData = [
         { id: 1, itemName: 'Apel Pencil รุ่นที่ 2', linkto: 'apelpencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
-        { id: 2, itemName: 'Magic Keyboard', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
-        { id: 3, itemName: 'Airpod Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' }
+        { id: 2, itemName: 'Magic Keyboard สำหรับ iPad', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
+        { id: 3, itemName: 'Airpods Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' },
+        { id: 4, itemName: 'อะแดปเตอร์แปลงไฟ USB-C ขนาด 20 วัตต์', linkto: 'airpodpro', itemPic: '../assets/image/homepage/adapter.jpg' },
+        { id: 5, itemName: 'อะแดปเตอร์ Digital AV แบบ Lightning', linkto: 'airpodpro', itemPic: '../assets/image/homepage/digitalAV.jpg' }
     ];
 
     return (
@@ -38,8 +40,8 @@ const Home = () => {
                     <span className='text-medium'><Link to='/store' className='text-apple-blue hover:underline text-medium'>เลือกซื้อสินค้าออนไลน์</Link> แล้วรับความช่วยเหลือจาก Specialist พร้อมบริการจัดส่งฟรีและอีกมากมาย</span>
                 </div>
                 <Carousel />
-                <div className='container mx-auto py-12 px-60'>
-                    <Itemslider title='แนะนำ' rowID='0' toItem='store' itemArr={recommendData} />
+                <div className='container mx-auto py-12'>
+                    <Itemslider title='แนะนำ' rowID='0' toItem='store' itemArr={recommendData}/>
                     <Itemslider title='iPhone' rowID='1' toItem='iphone' itemArr={iphoneData} />
                     <Itemslider title='อุปกรณ์เสริม' rowID='2' toItem='accessories' itemArr={accessData} />
                 </div>
