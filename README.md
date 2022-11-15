@@ -1,3 +1,10 @@
+# DS.2 Apple (อุปกรณ์อิเล็กทรอนิกส์)
+1. 64070065 ปิยะภัทร์ กุลดิลกโกวิท
+2. 64070093 ริมทวีป ทวีโชคเลิศชัยกุล
+3. 64070098 วรสิทธิ์ มาฆะสิทธิ์
+4. 64070134 จุฬารัตน์ อภิวงค์
+5. 64070209 ภูเบศ ฝีปากเพราะ
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
