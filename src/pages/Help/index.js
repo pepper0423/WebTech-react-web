@@ -92,6 +92,7 @@ const Help = () => {
         </div>
       </div>
       <hr />
+      <FormContact/>
       <div
         className="grid grid-cols-1 my-12 text-center gap-20 xl:my-20 xl:mx-96 xl:grid-cols-3 xl:divide-x xl:gap-0"
         style={{ color: '#0070c9' }}
