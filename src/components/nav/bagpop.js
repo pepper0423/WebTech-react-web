@@ -6,7 +6,7 @@ import AppleButton from '../AppleButton';
 import { Link } from 'react-router-dom';
 import './nav.css';
 
-const Bag = () => {
+const Bagpop = () => {
     const store = useStore();
     const { bag } = store || {};
 
@@ -92,4 +92,4 @@ const BagItems = (props) => {
     }
 };
 
-export default Bag;
+export default Bagpop;
