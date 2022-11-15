@@ -29,7 +29,7 @@ const Iphone14ProWITB = () => {
           </div>
           <div>
             <img
-              src="assets/whatsInTheBox/lightning-cable.jpg"
+              src="assets/whatsInTheBox/typec-cable.jpg"
               className="mx-auto"
               style={{ height: '330px' }}
               alt="WITB Lightning Cable"
