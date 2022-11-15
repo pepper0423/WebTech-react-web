@@ -21,7 +21,7 @@ function App() {
         <Route path="iphone" element={<Iphone />} />
         <Route path="ipad" element={<Ipad />} />
         <Route path="ipadgen10" element={<Ipadgen10 />} />
-        <Route path="Bag" element={<Bag />} />
+        <Route path="bag" element={<Bag />} />
       </Routes>
       <Foot />
     </div>
