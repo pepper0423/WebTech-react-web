@@ -6,6 +6,7 @@ import Footnote from '../../components/Footnote';
 import FormContact from '../../components/FormContact';
 
 const Help = () => {
+    
   return (
     <>
       <Nav />
@@ -92,7 +93,7 @@ const Help = () => {
         </div>
       </div>
       <hr />
-      <FormContact/>
+      
       <div
         className="grid grid-cols-1 my-12 text-center gap-20 xl:my-20 xl:mx-96 xl:grid-cols-3 xl:divide-x xl:gap-0"
         style={{ color: '#0070c9' }}
@@ -132,6 +133,7 @@ const Help = () => {
         </div>
       </div>
       <hr />
+      
       <div className="my-12 grid grid-cols-1 justify-items-center text-center">
         <div>
           <h1 className="text-5xl text-black font-medium my-4">ค้นหาหัวข้อ</h1>
@@ -300,6 +302,7 @@ const Help = () => {
         </div>
       </div>
       <hr />
+      <FormContact/>
       <div className="grid grid-cols-1 justify-items-center my-12 mx-10">
         <div>
           <h1 className="text-3xl text-black font-medium my-4">
