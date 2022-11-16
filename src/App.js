@@ -9,6 +9,7 @@ import Iphone from './pages/iphone';
 import Ipad from "./pages/Ipad";
 import Ipadgen10 from "./pages/ipadgen10";
 import Bag from "./pages/Bag";
+import Help from './pages/Help';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="iphone" element={<Iphone />} />
         <Route path="ipad" element={<Ipad />} />
         <Route path="ipadgen10" element={<Ipadgen10 />} />
+        <Route path="Bag" element={<Bag />} />
+        <Route path="help" element={<Help />} />
         <Route path="bag" element={<Bag />} />
       </Routes>
       <Foot />

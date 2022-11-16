@@ -11,7 +11,7 @@ function Foot() {
                             <div>
                                 <ul>
                                     <li className='footer-text text-small cursor-default'><strong>เลือกซื้อและเรียนรู้</strong></li>
-                                    <li><NavLink to='/store' className='footer-text text-small hover:underline'>ร้าน</NavLink></li>
+                                    <li><NavLink to='/' className='footer-text text-small hover:underline'>ร้าน</NavLink></li>
                                     <li><NavLink to='/ipad' className='footer-text text-small hover:underline'>iPad</NavLink></li>
                                     <li><NavLink to='/iphone' className='footer-text text-small hover:underline'>iPhone</NavLink></li>
                                     <li><NavLink to='/accessories' className='footer-text text-small hover:underline'>อุปกรณ์เสริม</NavLink></li>

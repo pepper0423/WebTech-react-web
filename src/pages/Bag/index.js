@@ -6,9 +6,9 @@ import AppleButton from '../../components/AppleButton';
 import Breadcrumb from '../../components/Breadcrumb';
 import Foot from '../../components/foot';
 import Footnote from '../../components/Footnote';
+import { Link } from 'react-router-dom';
 
 import Item from './Item';
-import NewArrivals from './NewArrivals';
 import Recommendations from './Recommentdations';
 import BagFAQ from './FAQ';
 
@@ -53,9 +53,15 @@ function Bag() {
                                 <p className="text-lg text-center text-gray-700 mt-5">
                                     รับบริการจัดส่งฟรีและส่งคืนฟรีทุกคำสั่งซื้อ
                                 </p>
+
                                 <AppleButton className="px-28 text-xl block mx-auto mt-8">
                                     ชำระเงิน
                                 </AppleButton>
+
+                                <button className="apple-btn-secondary rounded-xl px-5 py-4 w-full ">
+                                    เลือกซื้อสินค้าต่อ
+                                </button>
+
                             </div>
                             {!!bag && bag.map((item) => <Item item={item} key={item.id} />)}
                             <div className="grid grid-cols-1 md:grid-cols-4 pt-14 mb-24">
@@ -129,7 +135,6 @@ function Bag() {
                         </div>
                     </div>
                     <Recommendations />
-                    <NewArrivals />
                     <BagFAQ />
                     <Footnote>
                         <p className="text-xs text-gray-500">
@@ -152,16 +157,18 @@ function Bag() {
                             ถุงของคุณว่างเปล่า
                         </h1>
                         <p className="text-lg pt-5 text-black">
-                            ลงชื่อเข้าใช้เพื่อดูว่าคุณมีรายการสินค้าที่บันทึกไว้หรือไม่
-                            หรือไปเลือกซื้อสินค้าต่อ
+                            รับบริการจัดส่งฟรีและส่งคืนฟรีทุกคำสั่งซื้อ
                         </p>
                         <div className="mt-8 flex flex-col md:flex-row gap-5 md:max-w-screen-md">
-                            <AppleButton className="px-5 w-full py-4 rounded-xl ">
-                                ลงชื่อเข้าใช้
-                            </AppleButton>
-                            <button className="apple-btn-secondary rounded-xl px-5 py-4 w-full ">
-                                เลือกซื้อสินค้าต่อ
-                            </button>
+
+                            <Link to='/iphone'>
+                                <AppleButton className="px-20 w-full py-4 rounded-xl">
+                                    เลือกซื้อสินค้า
+                                </AppleButton>
+                            </Link>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -174,7 +181,6 @@ function Bag() {
                     </div>
                 </div>
                 <Recommendations />
-                <NewArrivals />
                 <BagFAQ />
                 <Footnote>
                     <p className="text-xs text-gray-500">
