@@ -8,7 +8,7 @@ const Home = () => {
         { id: 1, itemName: 'iPhone 14 Pro Max', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iphone-14-pro_overview.png' },
         { id: 2, itemName: 'iPhone 14 Pro', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iphone-14-pro_overview_1.png' },
         { id: 3, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_1.png' },
-        { id: 4, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png' },
+        { id: 4, itemName: 'iPhone 14 Plus', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_2.png' },
         { id: 5, itemName: 'Ipad รุ่นที่ 10', linkto: '/ipadgen10', itemPic: '../assets/image/homepage/ipad_gen_10_overview.jpg' },
         { id: 6, itemName: 'Apple Pencil รุ่นที่ 2', linkto: '', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
         { id: 7, itemName: 'Magic Keyboard', linkto: '', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
@@ -32,10 +32,10 @@ const Home = () => {
         { id: 3, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iPhone_14_Purple_PDP_Image_Position-1A_Purple_4.jpg' },
         { id: 4, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iPhone_14_Starlight_PDP_Image_Position-1A_Starlight_4.jpg' },
         { id: 5, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iPhone_14_Midnight_PDP_Image_Position-1A_Midnight_4.jpg' },
-        { id: 6, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png'},
-        { id: 7, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iPhone_14_Plus_Blue_PDP_Image_Position-1A_Blue_5.jpg'},
-        { id: 8, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png'},
-        { id: 9, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png'}
+        { id: 6, itemName: 'iPhone 14 Plus', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_2.png'},
+        { id: 7, itemName: 'iPhone 14 Plus', linkto: '/iphone14', itemPic: '../assets/image/homepage/iPhone_14_Plus_Blue_PDP_Image_Position-1A_Blue_5.jpg'},
+        { id: 8, itemName: 'iPhone 14 Plus', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_2.png'},
+        { id: 9, itemName: 'iPhone 14 Plus', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_2.png'}
     ];
     
     const accessData = [

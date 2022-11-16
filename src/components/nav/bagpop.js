@@ -66,7 +66,7 @@ const BagItems = (props) => {
                 {minBag.map((item) => (
                     <div key={item.id} className="py-5 grid grid-cols-4 gap-2">
                         <div>
-                            <img src="{item.image" alt="" />
+                            <img src={item.image} alt="" />
                         </div>
                         <div className='col-span-3 flex items-center'>
                             <span className='text-small'>{item.name}</span>

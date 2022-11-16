@@ -26,10 +26,9 @@ function App() {
         <Route path="iphone" element={<Iphone />} />
         <Route path="ipad" element={<Ipad />} />
         <Route path="ipadgen10" element={<Ipadgen10 />} />
-        <Route path="Bag" element={<Bag />} />
-        <Route path="help" element={<Help />} />
         <Route path="bag" element={<Bag />} />
-        <Route path="AddForm" element={<AddForm />} />
+        <Route path="help" element={<Help />} />
+        <Route path="addForm" element={<AddForm />} />
       </Routes>
       <Foot />
     </StoreProvider>

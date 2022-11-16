@@ -146,7 +146,7 @@ const Iphone14 = () => {
     const product = {
       id: Date.now(),
       product: 'iphone14regular',
-      name: `iPhone 14 regular${
+      name: `iPhone 14${
         variantType === 'plus' ? 'Plus' : ''
       } ความจุ ${variantStorage} ${colorNameTH[variantColor]}`,
       shortName: `iPhone 14 ${variantType === 'plus' ? 'Plus' : ''}`,
@@ -158,7 +158,7 @@ const Iphone14 = () => {
       price: price,
       image: `assets/products/iphone14/${productImage}`,
     };
-    setBag([bag, product]);
+    setBag([...bag, product]);
     navigate('/bag');
   };
 
