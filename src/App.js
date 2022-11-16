@@ -10,12 +10,9 @@ import Ipad from "./pages/Ipad";
 import Ipadgen10 from "./pages/ipadgen10";
 import Bag from "./pages/Bag";
 import Help from './pages/Help';
-<<<<<<< HEAD
 import AddForm from "./pages/Bag/AddForm";
-=======
 import ScrollToTop from "./components/ScrollToTop";
 import { StoreProvider } from "./hooks/store";
->>>>>>> 03116cbb2afb709688ea6722e9f690f673079e13
 
 function App() {
   return (
