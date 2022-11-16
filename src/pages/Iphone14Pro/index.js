@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useStore } from '../../store/store';
+import { useStore } from '../../hooks/store';
 import { FaAppleAlt } from 'react-icons/fa';
 
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
@@ -42,7 +42,7 @@ const colorNameTH = {
 };
 
 const Iphone14Pro = () => {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const store = useStore();
 
   useEffect(() => {
@@ -162,7 +162,7 @@ const Iphone14Pro = () => {
       image: `assets/products/iphone14pro/${productImage}`,
     };
     setBag([...bag, product]);
-    history.push('/bag');
+    navigate('/bag');
   };
 
   //
@@ -518,7 +518,7 @@ const Iphone14Pro = () => {
                     >
                       <div className="divide-y divide-gray-300">
                         <div className="flex flex-row justify-between items-center mb-3">
-                          <p className="text-lg font-medium text-black flex"><FaAppleAlt className='mr-2 translate-y-1 fill-red-600'/>ApelCare+</p>
+                          <p className="text-lg font-medium text-black flex"><FaAppleAlt className='mr-2 translate-y-1 fill-red-600'/>AppleCare+</p>
                           <span>฿8,290.00</span>
                         </div>
                         <div>

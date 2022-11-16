@@ -9,7 +9,7 @@ const Nav =(props)=> {
             <div className={`w-screen backdrop-blur-lg ${!!props.disableSticky ? 'fixed' : 'sticky top-0'}`}>
                 <nav className='navbar'>
                     <ul className='gap-x-10'>
-                        <li><NavLink to='/' className='text-big cursor-pointer text-[#FBFBFD] transition-all duration-300' end><FaAppleAlt className='h-full' /></NavLink></li>
+                        <li><NavLink to='/' className='text-big cursor-pointer text-[#fdfbfb] transition-all duration-300' end><FaAppleAlt className='h-full' /></NavLink></li>
                         <li><NavLink to='/' className='text-small cursor-pointer text-apple-white transition-all duration-300'>ร้าน</NavLink></li>
                         <li><NavLink to='/iphone' className='text-small cursor-pointer text-apple-white transition-all duration-300'>iPhone</NavLink></li>
                         <li><NavLink to='/ipad' className='text-small cursor-pointer text-apple-white transition-all duration-300'>iPad</NavLink></li>

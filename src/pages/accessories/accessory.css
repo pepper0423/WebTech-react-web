@@ -1,0 +1,43 @@
+.upperline{
+    border-top: 1px;
+    border-style: solid;
+    border-color: rgb(213, 211, 211);
+}
+.size{
+    width: 70%;
+}
+.itemsize{
+    width: 130px;
+    height: 130px;
+}
+.icon{
+    width: 100px;
+    margin-top: 12%;
+}
+.border{
+    border-top: 1px;
+    border-style: solid;
+    border-color: rgb(173, 173, 173);
+    
+}
+.containericon{
+    width: 30%;
+}
+.service{
+    width: 70%;
+}
+.size2{
+    width: 60%;
+}
+.header{
+    margin-top: 50px;
+    background-color: rgba(245,245,247,255);
+    float: right;
+
+}
+.headertext{
+    margin-top: 20px;
+}
+.body{
+    background-color: rgba(245,245,247,255);
+}

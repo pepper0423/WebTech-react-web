@@ -35,7 +35,7 @@ const Itemslider = (props) => {
                 />
                 <div id={'slider' + rowID} className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative'>
                     {itemArr.map((item) => (
-                        <CardList item={ item }/>
+                        <CardList item={ item } key={ item.id }/>
                     ))}
                 </div>
                 <MdChevronRight

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useStore } from '../../store/store';
+import { useStore } from '../../hooks/store';
 
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
@@ -37,7 +37,7 @@ const colorNameTH = {
 };
 
 const Ipadgen10 = () => {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const store = useStore();
 
   useEffect(() => {
@@ -107,9 +107,8 @@ const Ipadgen10 = () => {
     const product = {
       id: Date.now(),
       product: 'iphone13pro',
-      name: `iPad รุ่น 10.2 นิ้ว ${
-        variantType === 'wifi' ? 'Wi-fi' : 'Wi-fi + Cellular'
-      } ${variantStorage} - สี${colorNameTH[variantColor]}`,
+      name: `iPad รุ่น 10.2 นิ้ว ${variantType === 'wifi' ? 'Wi-fi' : 'Wi-fi + Cellular'
+        } ${variantStorage} - สี${colorNameTH[variantColor]}`,
       shortName: `iPad (รุ่นที่ 10)`,
       color: variantColor,
       type: variantType,
@@ -120,7 +119,7 @@ const Ipadgen10 = () => {
       image: `assets/products/ipad/${productImage}`,
     };
     setBag([...bag, product]);
-    history.push('/bag');
+    navigate('/bag');
   };
 
   return (
@@ -263,9 +262,8 @@ const Ipadgen10 = () => {
               </div>
               <div className="relative pt-5 mb-5">
                 <div
-                  className={`absolute bg-white bg-opacity-50 h-full w-full ${
-                    !!variantEngraving ? 'hidden' : ''
-                  }`}
+                  className={`absolute bg-white bg-opacity-50 h-full w-full ${!!variantEngraving ? 'hidden' : ''
+                    }`}
                 ></div>
                 <div id="variantAppleCare">
                   <h4 className="text-lg font-bold text-black">
@@ -691,14 +689,14 @@ const VariantTypeSelection = (props) => {
               <span className="text-xs">
                 {!!variantStorage
                   ? `฿${Number(
-                      ipadPrice['wifi'][variantStorage]
-                    ).toLocaleString('en', {
-                      minimumFractionDigits: 2,
-                      maximumFractionDigits: 2,
-                    })}`
+                    ipadPrice['wifi'][variantStorage]
+                  ).toLocaleString('en', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}`
                   : `เริ่มต้นที่ ฿${Number(
-                      ipadPrice['wifi']['64GB']
-                    ).toLocaleString('en')}`}
+                    ipadPrice['wifi']['64GB']
+                  ).toLocaleString('en')}`}
               </span>
             </div>
           </VariantOption>
@@ -715,14 +713,14 @@ const VariantTypeSelection = (props) => {
               <span className="text-xs">
                 {!!variantStorage
                   ? `฿${Number(
-                      ipadPrice['cellular'][variantStorage]
-                    ).toLocaleString('en', {
-                      minimumFractionDigits: 2,
-                      maximumFractionDigits: 2,
-                    })}`
+                    ipadPrice['cellular'][variantStorage]
+                  ).toLocaleString('en', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}`
                   : `เริ่มต้นที่ ฿${Number(
-                      ipadPrice['cellular']['64GB']
-                    ).toLocaleString('en')}`}
+                    ipadPrice['cellular']['64GB']
+                  ).toLocaleString('en')}`}
               </span>
             </div>
           </VariantOption>

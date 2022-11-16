@@ -1,6 +1,6 @@
 import { useState, createContext, useContext } from 'react';
 
-const storeContext = createContext();
+const storeContext = createContext({});
 
 export const StoreProvider = ({ children }) => {
   const store = useProvideStore();
@@ -21,6 +21,7 @@ const useProvideStore = () => {
     console.log(bagTemp)
     setBag(bagTemp);
   };
+
   return {
     bag,
     setBag,

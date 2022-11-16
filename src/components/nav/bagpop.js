@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import Popover from '@mui/material/Popover';
 import { BsBag, BsBookmark, BsBoxSeam } from "react-icons/bs";
-import { useStore } from '../../store/store';
+import { useStore } from '../../hooks/store.js';
 import AppleButton from '../AppleButton';
 import { Link } from 'react-router-dom';
 import './nav.css';
 
 const Bagpop = () => {
     const store = useStore();
-    const { bag } = store || {};
+    const { bag } = store;
 
     const [anchorEle, setAnchorEle] = useState(null);
 
@@ -56,33 +56,25 @@ const Bagpop = () => {
 
 const BagItems = (props) => {
     const { bag } = props;
-    if (!!bag) {
-        if (bag.length > 0) {
-            let minBag = bag;
-            if (bag.length > 3) {
-                minBag = minBag.slice(0, 3);
-            }
-            return (
-                <div className='divide-y divide-gray-300'>
-                    {minBag.map((item) => (
-                        <div key={item.id} className="py-5 grid grid-cols-4 gap-2">
-                            <div>
-                                <img src="{item.image" alt="" />
-                            </div>
-                            <div className='col-span-3 flex items-center'>
-                                <span className='text-small'>{item.name}</span>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            );
-        } else {
-            return (
-                <div className='text-center py-8 text-small text-gray-500'>
-                    <span>ถุงของคุณว่างเปล่า</span>
-                </div>
-            );
+    if (bag.length > 0) {
+        let minBag = bag;
+        if (bag.length > 3) {
+            minBag = minBag.slice(0, 3);
         }
+        return (
+            <div className='divide-y divide-gray-300'>
+                {minBag.map((item) => (
+                    <div key={item.id} className="py-5 grid grid-cols-4 gap-2">
+                        <div>
+                            <img src="{item.image" alt="" />
+                        </div>
+                        <div className='col-span-3 flex items-center'>
+                            <span className='text-small'>{item.name}</span>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        );
     } else {
         return (
             <div className='text-center py-8 text-small text-gray-500'>

@@ -10,9 +10,9 @@ const Home = () => {
         { id: 3, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_1.png' },
         { id: 4, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png' },
         { id: 5, itemName: 'Ipad รุ่นที่ 10', linkto: '/ipadgen10', itemPic: '../assets/image/homepage/ipad_gen_10_overview.jpg' },
-        { id: 6, itemName: 'Apel Pencil รุ่นที่ 2', linkto: 'apelpencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
-        { id: 7, itemName: 'Magic Keyboard', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
-        { id: 8, itemName: 'Airpod Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' }
+        { id: 6, itemName: 'Apple Pencil รุ่นที่ 2', linkto: '', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
+        { id: 7, itemName: 'Magic Keyboard', linkto: '', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
+        { id: 8, itemName: 'Airpod Pro', linkto: '', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' }
     ];
 
     const iphoneproData = [
@@ -39,11 +39,11 @@ const Home = () => {
     ];
     
     const accessData = [
-        { id: 1, itemName: 'Apel Pencil รุ่นที่ 2', linkto: 'apelpencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
-        { id: 2, itemName: 'Magic Keyboard สำหรับ iPad', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
-        { id: 3, itemName: 'Airpods Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' },
-        { id: 4, itemName: 'อะแดปเตอร์แปลงไฟ USB-C ขนาด 20 วัตต์', linkto: 'adapter', itemPic: '../assets/image/homepage/adapter.jpg' },
-        { id: 5, itemName: 'อะแดปเตอร์ Digital AV แบบ Lightning', linkto: 'digitalAV', itemPic: '../assets/image/homepage/digitalAV.jpg' }
+        { id: 1, itemName: 'Apple Pencil รุ่นที่ 2', linkto: '', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
+        { id: 2, itemName: 'Magic Keyboard สำหรับ iPad', linkto: '', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
+        { id: 3, itemName: 'Airpods Pro', linkto: '', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' },
+        { id: 4, itemName: 'อะแดปเตอร์แปลงไฟ USB-C ขนาด 20 วัตต์', linkto: '', itemPic: '../assets/image/homepage/adapter.jpg' },
+        { id: 5, itemName: 'อะแดปเตอร์ Digital AV แบบ Lightning', linkto: '', itemPic: '../assets/image/homepage/digitalAV.jpg' }
     ];
 
     return (
@@ -52,15 +52,12 @@ const Home = () => {
                 <Nav disableSticky={true} />
             </header>
             <section>
-                <div className='mx-auto text-center py-3 bg-apple-white'>
-                    <span className='text-medium'><Link to='/store' className='text-apple-blue hover:underline text-medium'>เลือกซื้อสินค้าออนไลน์</Link> แล้วรับความช่วยเหลือจาก Specialist พร้อมบริการจัดส่งฟรีและอีกมากมาย</span>
-                </div>
                 <Carousel />
                 <div className='container mx-auto py-12'>
-                    <Itemslider title='แนะนำ' rowID='0' toItem='store' itemArr={recommendData}/>
-                    <Itemslider title='iPhone 14 Pro & Pro Max' rowID='1' toItem='iphone' itemArr={iphoneproData} />
-                    <Itemslider title='iPhone 14 & 14 Plus' rowID='2' toItem='iphone' itemArr={iphoneData} />
-                    <Itemslider title='อุปกรณ์เสริม' rowID='3' toItem='accessories' itemArr={accessData} />
+                    <Itemslider title='แนะนำ' rowID='0' toItem='/' itemArr={recommendData}/>
+                    <Itemslider title='iPhone 14 Pro & Pro Max' rowID='1' toItem='/iphone' itemArr={iphoneproData} />
+                    <Itemslider title='iPhone 14 & 14 Plus' rowID='2' toItem='/iphone' itemArr={iphoneData} />
+                    <Itemslider title='อุปกรณ์เสริม' rowID='3' toItem='/accessories' itemArr={accessData} />
                 </div>
             </section>
         </div>

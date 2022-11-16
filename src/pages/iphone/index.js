@@ -66,7 +66,7 @@ function Iphone() {
                                 <p className="mt-4 font-semibold text-black">ระบบเซลลูลาร์ 5G ที่เร็วสุดแรง³</p>    </div>
                         </div>
                         <Link to='/iphone14'>
-                        <button class="rounded-full bg-stone-800 w-20">
+                        <button className="rounded-full bg-stone-800 w-20">
                             <h1 className='text-white'>ซื้อเลย</h1>
                         </button>
                         </Link>
@@ -140,7 +140,7 @@ function Iphone() {
                                 </div>
                         </div>
                         <Link to='/iphone14pro'>
-                            <button class="rounded-full bg-stone-800 w-20">
+                            <button className="rounded-full bg-stone-800 w-20">
                                 <h1 className='text-white'>ซื้อเลย</h1>
                             </button>
                         </Link>

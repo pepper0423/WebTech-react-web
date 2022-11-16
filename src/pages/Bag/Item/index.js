@@ -1,7 +1,7 @@
 
 import React from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { useStore } from '../../../store/store';
+import { useStore } from '../../../hooks/store';
 
 const Item = (props) => {
     const store = useStore();

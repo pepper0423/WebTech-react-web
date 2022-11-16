@@ -8,9 +8,11 @@ import Itemslider from '../../components/itemslider';
 
 const Ipad = () => {
     const accessData = [
-        { id: 1, itemName: 'Apel Pencil รุ่นที่ 2', linkto: 'apelpencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
-        { id: 2, itemName: 'Magic Keyboard', linkto: 'magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
-        { id: 3, itemName: 'Airpod Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' }];
+        { id: 1, itemName: 'Apple Pencil รุ่นที่ 2', linkto: '/applepencil2ndgen', itemPic: '../assets/image/homepage/applepencil2ndgen_overview.jpg' },
+        { id: 2, itemName: 'Magic Keyboard สำหรับ iPad', linkto: '/magickeyboard', itemPic: '../assets/image/homepage/magickeyboard_overview.jpg' },
+        { id: 3, itemName: 'Airpods Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' },
+        { id: 4, itemName: 'อะแดปเตอร์แปลงไฟ USB-C ขนาด 20 วัตต์', linkto: '/adapter', itemPic: '../assets/image/homepage/adapter.jpg' },
+        { id: 5, itemName: 'อะแดปเตอร์ Digital AV แบบ Lightning', linkto: '/digitalAV', itemPic: '../assets/image/homepage/digitalAV.jpg' }];
     return (
 
         
@@ -27,7 +29,7 @@ const Ipad = () => {
                     <h1 className='text-2xl	font-bold'>เอาใจไปเลย</h1><br></br>
                     <h3 className='b'>เริ่มต้นที่ ฿17,900</h3>
                     <Link to='/ipadgen10'>
-                        <button class="rounded-full bg-slate-600  w-20 h-10 mt-5">
+                        <button className="rounded-full bg-slate-600  w-20 h-10 mt-5">
                             <h1 className='text-white'>ซื้อเลย</h1>
                         </button>
                         </Link>
@@ -61,7 +63,7 @@ const Ipad = () => {
                         </p>
                         </div>
                         <Link to='/ipadgen10'>
-                        <button class="rounded-full bg-slate-100 w-20 h-10 mt-5">
+                        <button className="rounded-full bg-slate-100 w-20 h-10 mt-5">
                             <h1 className='text-black'>เลือกดู</h1>
                         </button>
                         </Link>
@@ -79,7 +81,7 @@ const Ipad = () => {
                         </p>
                         </div>
                         <Link to='/ipadgen10'>
-                        <button class="rounded-full bg-slate-100 w-20 h-10 mt-5">
+                        <button className="rounded-full bg-slate-100 w-20 h-10 mt-5">
                             <h1 className='text-black'>เลือกดู</h1>
                         </button>
                         </Link>
