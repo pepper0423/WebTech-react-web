@@ -1,7 +1,11 @@
 
 
-const Accessories =()=> {
-    
+function Accessories() {
+    return (
+        <div>
+            hi
+        </div>
+    );
 }
 
 export default Accessories;
