@@ -15,11 +15,27 @@ const Home = () => {
         { id: 8, itemName: 'Airpod Pro', linkto: 'airpodpro', itemPic: '../assets/image/homepage/airpodpro_overview.jpg' }
     ];
 
+    const iphoneproData = [
+        { id: 1, itemName: 'iPhone 14 Pro Max', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iPhone_14_Pro_Max_Deep_Purple_PDP_Image_Position-1A_Deep_Purple_5.jpg' },
+        { id: 2, itemName: 'iPhone 14 Pro Max', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iPhone_14_Pro_Max_Gold_PDP_Image_Position-1A_Gold_5.jpg' },
+        { id: 3, itemName: 'iPhone 14 Pro Max', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iPhone_14_Pro_Max_Silver_PDP_Image_Position-1A_Silver_5.jpg' },
+        { id: 4, itemName: 'iPhone 14 Pro Max', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iPhone_14_Pro_Max_Space_Black_PDP_Image_Position-1A_Space_Black_5.jpg' },
+        { id: 5, itemName: 'iPhone 14 Pro', linkto: '/iphone14pro', itemPic:  '../assets/image/homepage/iPhone_14_Pro_Silver_PDP_Image_Position-1A_Silver_4.jpg'},
+        { id: 6, itemName: 'iPhone 14 Pro', linkto: '/iphone14pro', itemPic:  '../assets/image/homepage/iPhone_14_Pro_Deep_Purple_PDP_Image_Position-1A_Deep_Purple_4.jpg'},
+        { id: 7, itemName: 'iPhone 14 Pro', linkto: '/iphone14pro', itemPic:  '../assets/image/homepage/iPhone_14_Pro_Gold_PDP_Image_Position-1A_Gold_4.jpg'},
+        { id: 8, itemName: 'iPhone 14 Pro', linkto: '/iphone14pro', itemPic:  '../assets/image/homepage/iPhone_14_Pro_Space_Black_PDP_Image_Position-1A_Space_Black_4.jpg'}
+    ];
+
     const iphoneData = [
-        { id: 1, itemName: 'iPhone 14 Pro Max', linkto: '/iphone14pro', itemPic: '../assets/image/homepage/iphone-14-pro_overview.png' },
-        { id: 2, itemName: 'iPhone 14 Pro', linkto: '/iphone14pro', itemPic:  '../assets/image/homepage/iphone-14-pro_overview_1.png'},
-        { id: 3, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iphone-14_overview_1.png' },
-        { id: 4, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png' }
+        { id: 1, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iPhone_14_Blue_PDP_Image_Position-1A_Blue_4.jpg' },
+        { id: 2, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iPhone_14_ProductRED_PDP_Image_Position-1A_ProductRED_4.jpg' },
+        { id: 3, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iPhone_14_Purple_PDP_Image_Position-1A_Purple_4.jpg' },
+        { id: 4, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iPhone_14_Starlight_PDP_Image_Position-1A_Starlight_4.jpg' },
+        { id: 5, itemName: 'iPhone 14', linkto: '/iphone14', itemPic: '../assets/image/homepage/iPhone_14_Midnight_PDP_Image_Position-1A_Midnight_4.jpg' },
+        { id: 6, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png'},
+        { id: 7, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iPhone_14_Plus_Blue_PDP_Image_Position-1A_Blue_5.jpg'},
+        { id: 8, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png'},
+        { id: 9, itemName: 'iPhone 14 Plus', linkto: '/iphone14plus', itemPic: '../assets/image/homepage/iphone-14_overview_2.png'}
     ];
     
     const accessData = [
@@ -42,8 +58,9 @@ const Home = () => {
                 <Carousel />
                 <div className='container mx-auto py-12'>
                     <Itemslider title='แนะนำ' rowID='0' toItem='store' itemArr={recommendData}/>
-                    <Itemslider title='iPhone' rowID='1' toItem='iphone' itemArr={iphoneData} />
-                    <Itemslider title='อุปกรณ์เสริม' rowID='2' toItem='accessories' itemArr={accessData} />
+                    <Itemslider title='iPhone 14 Pro & Pro Max' rowID='1' toItem='iphone' itemArr={iphoneproData} />
+                    <Itemslider title='iPhone 14 & 14 Plus' rowID='2' toItem='iphone' itemArr={iphoneData} />
+                    <Itemslider title='อุปกรณ์เสริม' rowID='3' toItem='accessories' itemArr={accessData} />
                 </div>
             </section>
         </div>
