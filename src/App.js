@@ -10,6 +10,7 @@ import Ipad from "./pages/Ipad";
 import Ipadgen10 from "./pages/ipadgen10";
 import Bag from "./pages/Bag";
 import Help from './pages/Help';
+import AddForm from "./pages/Bag/AddForm";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="Bag" element={<Bag />} />
         <Route path="help" element={<Help />} />
         <Route path="bag" element={<Bag />} />
+        <Route path="AddForm" element={<AddForm />} />
       </Routes>
       <Foot />
     </div>
