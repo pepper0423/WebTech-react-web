@@ -52,9 +52,6 @@ const Home = () => {
                 <Nav disableSticky={true} />
             </header>
             <section>
-                <div className='mx-auto text-center py-3 bg-apple-white'>
-                    <span className='text-medium'><Link to='/' className='text-apple-blue hover:underline text-medium'>เลือกซื้อสินค้าออนไลน์</Link> แล้วรับความช่วยเหลือจาก Specialist พร้อมบริการจัดส่งฟรีและอีกมากมาย</span>
-                </div>
                 <Carousel />
                 <div className='container mx-auto py-12'>
                     <Itemslider title='แนะนำ' rowID='0' toItem='/' itemArr={recommendData}/>
