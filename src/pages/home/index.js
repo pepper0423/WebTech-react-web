@@ -53,14 +53,14 @@ const Home = () => {
             </header>
             <section>
                 <div className='mx-auto text-center py-3 bg-apple-white'>
-                    <span className='text-medium'><Link to='/store' className='text-apple-blue hover:underline text-medium'>เลือกซื้อสินค้าออนไลน์</Link> แล้วรับความช่วยเหลือจาก Specialist พร้อมบริการจัดส่งฟรีและอีกมากมาย</span>
+                    <span className='text-medium'><Link to='/' className='text-apple-blue hover:underline text-medium'>เลือกซื้อสินค้าออนไลน์</Link> แล้วรับความช่วยเหลือจาก Specialist พร้อมบริการจัดส่งฟรีและอีกมากมาย</span>
                 </div>
                 <Carousel />
                 <div className='container mx-auto py-12'>
-                    <Itemslider title='แนะนำ' rowID='0' toItem='store' itemArr={recommendData}/>
-                    <Itemslider title='iPhone 14 Pro & Pro Max' rowID='1' toItem='iphone' itemArr={iphoneproData} />
-                    <Itemslider title='iPhone 14 & 14 Plus' rowID='2' toItem='iphone' itemArr={iphoneData} />
-                    <Itemslider title='อุปกรณ์เสริม' rowID='3' toItem='accessories' itemArr={accessData} />
+                    <Itemslider title='แนะนำ' rowID='0' toItem='/' itemArr={recommendData}/>
+                    <Itemslider title='iPhone 14 Pro & Pro Max' rowID='1' toItem='/iphone' itemArr={iphoneproData} />
+                    <Itemslider title='iPhone 14 & 14 Plus' rowID='2' toItem='/iphone' itemArr={iphoneData} />
+                    <Itemslider title='อุปกรณ์เสริม' rowID='3' toItem='/accessories' itemArr={accessData} />
                 </div>
             </section>
         </div>
