@@ -10,10 +10,12 @@ import Ipad from "./pages/Ipad";
 import Ipadgen10 from "./pages/ipadgen10";
 import Bag from "./pages/Bag";
 import Help from './pages/Help';
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="accessories" element={<Accessories />} />
