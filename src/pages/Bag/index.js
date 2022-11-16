@@ -189,7 +189,6 @@ function Bag() {
                     </p>
                 </Footnote>
                 <Breadcrumb breadcrumb={['ถุง']} />
-                <Foot />
             </>
         );
     }

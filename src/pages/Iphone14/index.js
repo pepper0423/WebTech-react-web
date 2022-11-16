@@ -17,9 +17,6 @@ import Iphone14Compare from './Compare';
 import Iphone14FAQ from './FAQ';
 
 
-
-
-
 const iphone14Price = {
   regular: {
     '128GB': 32900,
@@ -42,8 +39,8 @@ const colorNameTH = {
 };
 
 const Iphone14 = () => {
-  const history = useNavigate();
-  const store = useStore();
+  const navigate = useNavigate();
+  const store = useStore({});
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -161,8 +158,8 @@ const Iphone14 = () => {
       price: price,
       image: `assets/products/iphone14/${productImage}`,
     };
-    setBag([...bag, product]);
-    history.push('/bag');
+    setBag([bag, product]);
+    navigate('/bag');
   };
 
   return (
@@ -620,7 +617,7 @@ const Iphone14 = () => {
                     <br />
                     ขณะนี้ยังไม่มีจำหน่ายที่ Apple Iconsiam
                     <br />
-                    <span className="text-apple-link-blue">ดูร้านอื่น</span>
+                    <span className="text-apple-blue">ดูร้านอื่น</span>
                   </p>
                 </div>
                 <div className="flex">
@@ -660,7 +657,7 @@ const Iphone14 = () => {
           <h2 className="text-4xl font-semibold text-center mt-20">
           Reviews
           </h2>
-          <video width="100%" height="auto" controls="controls" controlsList="nodownload" oncontextmenu="return false;">
+          <video width="100%" height="auto" controls="controls" controlsList="nodownload">
             <source src="assets/features/iphone14/Review_iphone14.mp4" type="video/mp4"/>
           </video>
         </div>

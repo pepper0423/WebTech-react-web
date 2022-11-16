@@ -29,7 +29,7 @@ const Ipad = () => {
                     <h1 className='text-2xl	font-bold'>เอาใจไปเลย</h1><br></br>
                     <h3 className='b'>เริ่มต้นที่ ฿17,900</h3>
                     <Link to='/ipadgen10'>
-                        <button class="rounded-full bg-slate-600  w-20 h-10 mt-5">
+                        <button className="rounded-full bg-slate-600  w-20 h-10 mt-5">
                             <h1 className='text-white'>ซื้อเลย</h1>
                         </button>
                         </Link>
@@ -63,7 +63,7 @@ const Ipad = () => {
                         </p>
                         </div>
                         <Link to='/ipadgen10'>
-                        <button class="rounded-full bg-slate-100 w-20 h-10 mt-5">
+                        <button className="rounded-full bg-slate-100 w-20 h-10 mt-5">
                             <h1 className='text-black'>เลือกดู</h1>
                         </button>
                         </Link>
@@ -81,7 +81,7 @@ const Ipad = () => {
                         </p>
                         </div>
                         <Link to='/ipadgen10'>
-                        <button class="rounded-full bg-slate-100 w-20 h-10 mt-5">
+                        <button className="rounded-full bg-slate-100 w-20 h-10 mt-5">
                             <h1 className='text-black'>เลือกดู</h1>
                         </button>
                         </Link>

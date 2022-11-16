@@ -42,7 +42,7 @@ const colorNameTH = {
 };
 
 const Iphone14Pro = () => {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const store = useStore();
 
   useEffect(() => {
@@ -162,7 +162,7 @@ const Iphone14Pro = () => {
       image: `assets/products/iphone14pro/${productImage}`,
     };
     setBag([...bag, product]);
-    history.push('/bag');
+    navigate('/bag');
   };
 
   //

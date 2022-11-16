@@ -11,10 +11,11 @@ import Ipadgen10 from "./pages/ipadgen10";
 import Bag from "./pages/Bag";
 import Help from './pages/Help';
 import ScrollToTop from "./components/ScrollToTop";
+import { StoreProvider } from "./hooks/store";
 
 function App() {
   return (
-    <div className="App">
+    <StoreProvider>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -29,7 +30,7 @@ function App() {
         <Route path="bag" element={<Bag />} />
       </Routes>
       <Foot />
-    </div>
+    </StoreProvider>
   );
 }
 
