@@ -6,7 +6,7 @@ function Foot() {
         <footer>
             <div className='relative'>
                 <div className='foot-container'><br />
-                    <div className='container mx-auto px-[17rem]'>
+                    <div className='container mx-auto px-[17rem] max-[1280px]:px-0'>
                         <div className='top-foot pb-12 grid grid-cols-5'>
                             <div>
                                 <ul>
