@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Popover from '@mui/material/Popover';
 import { BsBag, BsBookmark, BsBoxSeam } from "react-icons/bs";
-import { useStore } from '../../store/store';
+import { useStore } from '../../hooks/store';
 import AppleButton from '../AppleButton';
 import { Link } from 'react-router-dom';
 import './nav.css';

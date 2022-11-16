@@ -26,10 +26,10 @@ function Accessories() {
         { id: 6, itemName: 'เคส iPhone 14 พร้อม MagSafe', linkto: '', itemPic: '../assets/accesory/list/iphone/MV7N2.png' }
     ];
     const accessData2 = [
-        { id: 1, itemName: 'Apel Pencil รุ่นที่ 1', linkto: '', itemPic: '../assets/accesory/list/ipad/MK0C2.png' },
+        { id: 1, itemName: 'Apple Pencil รุ่นที่ 1', linkto: '', itemPic: '../assets/accesory/list/ipad/MK0C2.png' },
         { id: 2, itemName: 'Magic Keyboard สำหรับ iPad', linkto: '', itemPic: '../assets/accesory/list/ipad/MQDP3_FV401.png' },
         { id: 3, itemName: 'Smart Folio', linkto: '', itemPic: '../assets/accesory/list/ipad/MQDV3.png' },
-        { id: 4, itemName: 'Apel Pencil รุ่นที่ 2', linkto: '', itemPic: '../assets/accesory/list/ipad/MU8F2.png' }
+        { id: 4, itemName: 'Apple Pencil รุ่นที่ 2', linkto: '', itemPic: '../assets/accesory/list/ipad/MU8F2.png' }
 
     ];
     const accessData3 = [

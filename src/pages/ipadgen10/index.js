@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useStore } from '../../store/store';
+import { useStore } from '../../hooks/store';
 
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';

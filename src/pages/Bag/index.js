@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useStore } from '../../store/store';
+import { useStore } from '../../hooks/store';
 
 import Nav from '../../components/nav';
 import AppleButton from '../../components/AppleButton';

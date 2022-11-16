@@ -21,6 +21,7 @@ const useProvideStore = () => {
     console.log(bagTemp)
     setBag(bagTemp);
   };
+
   return {
     bag,
     setBag,
