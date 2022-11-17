@@ -8,12 +8,12 @@ import 'swiper/css/pagination';
 const Iphone14ProWITB = () => {
   return (
     <div className="mb-20">
-      <h2 className="text-4xl font-semibold text-center mt-20">
+      <h2 className="text-4xl font-semibold text-center mt-20 text-white">
         สิ่งที่มีมาให้ในกล่อง
       </h2>
       <div className="mt-14 hidden lg:block">
         <div
-          className="grid grid-cols-2"
+          className="grid grid-cols-2 rounded-xl"
           style={{
             backgroundColor: '#fafafa',
             maxHeight: '330px',
@@ -36,7 +36,7 @@ const Iphone14ProWITB = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 mt-5">
+        <div className="grid grid-cols-2 mt-5 text-white">
           <div className="text-center">
             <span>iPhone</span>
           </div>
@@ -97,9 +97,9 @@ const Iphone14ProWITB = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <p className="text-sm text-center mt-10 text-gray-600">
+      <p className="text-sm text-center mt-10 text-gray-300">
         iPhone 14 และ iPhone 14 Pro Max ไม่มีอะแดปเตอร์แปลงไฟหรือ EarPods ให้มาด้วย{' '}
-        <span className="text-apple-link-blue">
+        <span className="text-white">
         ซึ่งเป็นส่วนหนึ่งในความพยายามของเราที่จะไปสู่ ความเป็นกลางทางคาร์บอนภายในปี 2030
         </span>{' '}
         สิ่งที่มีมาให้ในกล่องได้แก่สาย USB‑C เป็น Lightning

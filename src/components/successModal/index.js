@@ -14,7 +14,7 @@ const SuccessModal = ({ isVisible }) => {
                     <h3 class="md:text-2xl text-base text-gray-900 font-semibold text-center">ชำระเสร็จสิ้น!</h3>
                     <p class="text-gray-600 my-2">ขอบคุณสำหรับการใช้บริการ.</p>
                     <div class="py-10 text-center">
-                        <Link to='/' class="px-12 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-xl">
+                        <Link to='/' class="px-12 bg-red-600 hover:bg-red-500 text-white font-semibold py-3 rounded-xl">
                             กลับสู่หน้าแรก
                         </Link>
                     </div>

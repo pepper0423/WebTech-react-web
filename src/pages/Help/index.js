@@ -260,7 +260,7 @@ const Help = () => {
         </div>
       </div>
       <hr className="w-8/12 mx-auto" />
-      <h1 className="text-center mt-10 mb-3 text-3xl text-black  font-medium">
+      <h1 className="text-center mt-10 mb-3 text-3xl text-white  font-medium">
         โปรดระวังชิ้นส่วนของปลอม
       </h1>
       <div className="mx-auto max-w-screen-md mb-10 px-5">
@@ -301,45 +301,13 @@ const Help = () => {
         <div className="flex">
           <img
             alt=""
-            src="assets/src_image/help/featured-section-my-support_2x.jpg"
+            src="assets/src_image/help/featured-section-my-support_2x.png"
             className="object-scale-down "
           />
         </div>
       </div>
       <hr />
       <FormContact />
-      <div className="grid grid-cols-1 justify-items-center my-12 mx-10">
-        <div>
-          <h1 className="text-3xl text-white font-medium my-4">
-            โปรแกรมการให้บริการของ Apple
-          </h1>
-          <ul
-            className="list-none space-y-2 text-xl text-white"
-          >
-            <li className='cursor-pointer hover:underline'>
-              โปรแกรมการให้บริการสำหรับ iPhone 14 และ iPhone 14 Pro
-              สำหรับปัญหาเครื่องในกรณีที่ไม่มีเสียง
-              <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-            </li>
-            <li className='cursor-pointer hover:underline'>
-              โปรแกรมการเปลี่ยนโมดูลจอแสดงผล iPhone 13
-              สำหรับปัญหาเกี่ยวกับพื้นผิวระบบสัมผัส
-            </li>
-            <li className='cursor-pointer hover:underline'>โปรแกรมการบริการ AirPods Pro สำหรับปัญหาเกี่ยวกับเสียง</li>
-            <li className='cursor-pointer hover:underline'>
-              โปรแกรมการให้บริการ iPad Air (รุ่นที่ 3)
-              สำหรับปัญหาหน้าจอว่างเปล่า
-            </li>
-            <li className='cursor-pointer hover:underline'>โปรแกรมการเรียกคืนแบตเตอรี่ MacBook Pro รุ่น 15 นิ้ว</li>
-            <li className='cursor-pointer hover:underline'>
-              ดูโปรแกรมทั้งหมด
-              <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-            </li>
-          </ul>
-        </div>
-        <div>
-        </div>
-      </div>
       <Breadcrumb breadcrumb={['บริการช่วยเหลือ']} />
     </div>
   );

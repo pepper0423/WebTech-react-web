@@ -37,24 +37,24 @@ function Bag() {
     }, [bag]);
     if (bag.length > 0) {
         return (
-            <>
-                <Nav />
+            <div className='bg-netflix-black'>
+                <Nav disableSticky={true} />
                 <div className="max-w-screen-lg mx-auto px-5">
                     <div className="divide-y divide-gray-300">
                         <div className="my-20">
-                            <h2 className="font-semibold text-3xl md:text-4xl text-center">
+                            <h2 className="font-semibold text-3xl md:text-4xl text-center text-white">
                                 นี่คือรายการสินค้าที่อยู่ในถุงของคุณ{' '}
                                 {`฿${Number(grandTotal).toLocaleString('en', {
                                     minimumFractionDigits: 2,
                                     maximumFractionDigits: 2,
                                 })}`}
                             </h2>
-                            <p className="text-lg text-center text-gray-700 mt-5">
+                            <p className="text-lg text-center text-gray-300 mt-5">
                                 รับบริการจัดส่งฟรีและส่งคืนฟรีทุกคำสั่งซื้อ
                             </p>
                             <div className='grid grid-cols-2 gap-4'>
                                 <Link to='/addForm'>
-                                    <button className="bg-[#0071e3] hover:bg-[#0077ed] text-[#ebebeb] hover:text-[#ededed] rounded-xl px-5 py-4 w-full ">
+                                    <button className="bg-[#e30000] hover:bg-[#ed0000] text-[#ebebeb] hover:text-[#ededed] rounded-xl px-5 py-4 w-full ">
                                         ชำระเงิน
                                     </button>
                                 </Link>
@@ -100,7 +100,7 @@ function Bag() {
                                         </div>
                                     </div>
                                     <div className="text-right">
-                                        <p className="text-sm text-gray-500">
+                                        <p className="text-sm text-gray-300">
                                             รวม VAT จำนวน{' '}
                                             {`฿${Number((grandTotal / 1.07) * 0.07).toLocaleString(
                                                 'en',
@@ -110,7 +110,7 @@ function Bag() {
                                                 }
                                             )}`}
                                         </p>
-                                        <p className="text-sm text-blue-600 mt-1 hover:underline cursor-pointer">
+                                        <p className="text-sm text-gray-300 mt-1 hover:underline cursor-pointer">
                                             {`฿${Number(grandTotal / 10).toLocaleString('en', {
                                                 minimumFractionDigits: 2,
                                                 maximumFractionDigits: 2,
@@ -130,7 +130,7 @@ function Bag() {
                     <div className="max-w-screen-lg mx-auto px-5 py-5">
                         <p>
                             ต้องการความช่วยเหลือเพิ่มเติม{' '}
-                            <span className="text-blue-600 hover:underline cursor-pointer">
+                            <span className="text-white font-medium hover:underline cursor-pointer">
                                 แชท
                             </span>{' '}
                             หรือโทร 001‑800‑65‑6957
@@ -138,28 +138,29 @@ function Bag() {
                     </div>
                 </div>
                 <Recommendations />
-                <BagFAQ />
+                <div className='bg-white'>
+                    <BagFAQ />
+                </div>
                 <Footnote>
-                    <p className="text-xs text-gray-500">
+                    <p className="text-xs text-gray-400">
                         ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
                         และไม่มีค่าธรรมเนียมการจัดส่งสินค้าทุกประเภท
                     </p>
                 </Footnote>
                 <Breadcrumb breadcrumb={['ถุง']} />
-                <Foot />
-            </>
+            </div>
         );
     }
     else {
         return (
-            <>
-                <Nav />
+            <div className='bg-netflix-black'>
+                <Nav disableSticky={true} />
                 <div>
                     <div className="max-w-screen-lg mx-auto px-5 py-14">
-                        <h1 className="font-semibold text-3xl md:text-4xl">
+                        <h1 className="font-semibold text-3xl md:text-4xl text-white">
                             ถุงของคุณว่างเปล่า
                         </h1>
-                        <p className="text-lg pt-5 text-black">
+                        <p className="text-lg pt-5 text-white">
                             รับบริการจัดส่งฟรีและส่งคืนฟรีทุกคำสั่งซื้อ
                         </p>
                         <div className="mt-8 flex flex-col md:flex-row gap-5 md:max-w-screen-md">
@@ -177,22 +178,24 @@ function Bag() {
                 </div>
                 <div className="border-t border-b border-gray-300">
                     <div className="max-w-screen-lg mx-auto px-5 py-5">
-                        <p className='text-black'>
+                        <p className='text-white'>
                             ต้องการความช่วยเหลือเพิ่มเติม{' '}
-                            <span className="text-blue-600">แชท</span> หรือโทร 001‑800‑65‑6957
+                            <span className="text-white font-medium hover:underline cursor-pointer">แชท</span> หรือโทร 001‑800‑65‑6957
                         </p>
                     </div>
                 </div>
                 <Recommendations />
-                <BagFAQ />
+                <div className='bg-white'>
+                    <BagFAQ />
+                </div>
                 <Footnote>
-                    <p className="text-xs text-gray-500">
+                    <p className="text-xs text-gray-400">
                         ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
                         และไม่มีค่าธรรมเนียมการจัดส่งสินค้าทุกประเภท
                     </p>
                 </Footnote>
                 <Breadcrumb breadcrumb={['ถุง']} />
-            </>
+            </div>
         );
     }
 }

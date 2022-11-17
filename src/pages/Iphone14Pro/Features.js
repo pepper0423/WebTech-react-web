@@ -4,14 +4,14 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 const Iphone14ProFeatures = () => {
   return (
     <div>
-      <h2 className="text-4xl font-semibold text-center mt-20">
+      <h2 className="text-4xl font-semibold text-center mt-20 text-white">
         โปรยิ่งกว่าโปร
       </h2>
       <div className="keyfeatures-container mt-10">
         <div className="keyfeature-col keyfeature-col-span-4 grid grid-cols-2">
           <div className="p-7">
-            <p className="text-3xl font-medium text-gray-500">
-              <span className="text-black">
+            <p className="text-3xl font-medium text-gray-400">
+              <span className="text-white">
                 ความละเอียดมากขึ้นสูงสุด 4 เท่า
               </span>{' '}
               iPhone 14 Pro สร้างมาตรฐานใหม่ให้กับสิ่งที่ 48 เมกะพิกเซลทำได้ นั่นคือการ
@@ -30,8 +30,8 @@ const Iphone14ProFeatures = () => {
 
         <div className="keyfeature-col keyfeature-col-span-2">
           <div className="p-7">
-            <p className="text-3xl font-medium text-gray-500">
-              <span className="text-black">Dynamic Island</span>{' '}
+            <p className="text-3xl font-medium text-gray-400">
+              <span className="text-white">Dynamic Island</span>{' '}
               นวัตกรรมของ Apple อย่างแท้จริง
             </p>
           </div>
@@ -47,8 +47,8 @@ const Iphone14ProFeatures = () => {
 
         <div className="keyfeature-col keyfeature-col-span-3">
           <div className="p-7 w-3/4">
-            <p className="text-3xl font-medium text-gray-500">
-              <span className="text-black">
+            <p className="text-3xl font-medium text-gray-400">
+              <span className="text-white">
                 จอภาพแบบติดตลอด พร้อมอยู่ตลอด
               </span>{' '}
               มาพร้อมกับแบตเตอรี่ที่ใช้งานได้ตลอดทั้งวัน
@@ -71,19 +71,19 @@ const Iphone14ProFeatures = () => {
             />
           </div>
           <div className="absolute bottom-0 p-7">
-            <p className="text-3xl text-center font-medium text-gray-500">
-              <span className="text-black">A16 Bionic</span>{' '}
+            <p className="text-3xl text-center font-medium text-gray-400">
+              <span className="text-white">A16 Bionic</span>{' '}
               ชิปสมาร์ทโฟนที่เร็วที่สุดในโลก
               <br />
-              <span className="text-black">5G ที่เร็วสุดแรง</span>{' '}
+              <span className="text-white">5G ที่เร็วสุดแรง</span>{' '}
               เพื่อการดาวน์โหลดที่เร็วยิ่งขึ้น และการสตรีมคุณภาพสูง³
             </p>
           </div>
         </div>
         <div className="keyfeature-col keyfeature-col-span-4">
           <div className="p-7">
-            <p className="text-3xl text-center font-medium text-gray-500">
-              <span className="text-black">
+            <p className="text-3xl text-center font-medium text-gray-400">
+              <span className="text-white">
                 กล้องหลักความละเอียด 48MP พร้อมเซ็นเซอร์ แบบ Quad-pixel ที่ล้ำสมัย
               </span>{' '}
               ระบบกล้องระดับโปรที่ โปรอย่างยิ่งใหญ่กว่าครั้งไหนๆ
@@ -100,8 +100,8 @@ const Iphone14ProFeatures = () => {
         </div>
         <div className="keyfeature-col keyfeature-col-span-2">
           <div className="p-7">
-            <p className="text-3xl font-medium text-gray-500">
-              <span className="text-black">Ceramic Shield</span>{' '}
+            <p className="text-3xl font-medium text-gray-400">
+              <span className="text-white">Ceramic Shield</span>{' '}
               แข็งแกร่งกว่ากระจกไหนๆ บนสมาร์ทโฟน ความสามารถในการทนน้ำ
               เสริมด้วยสแตนเลสสตีลเกรดเดียวกับที่ใช้ทำเครื่องมือศัลยกรรม
             </p>
@@ -118,7 +118,7 @@ const Iphone14ProFeatures = () => {
       </div>
       <p className="text-center text-lg font-medium mt-14">
         <span
-          className="text-apple-blue hover:underline"
+          className="text-white font-medium hover:underline"
         >
           ดูเพิ่มเติมเกี่ยวกับ iPhone 14 Pro
           <KeyboardArrowRightIcon />

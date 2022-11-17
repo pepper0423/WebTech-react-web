@@ -6,9 +6,9 @@ const ProductNavBar = (props) => {
     <nav
       className={`product-nav ${
         !!props.disableSticky ? '' : 'sticky top-0'
-      } border-b`}
+      } border-b bg-opacity-75`}
     >
-      <div className="flex max-w-screen-lg px-5 mx-auto flex-row text-black justify-between items-center">
+      <div className="flex max-w-screen-lg px-5 mx-auto flex-row text-white justify-between items-center">
         <h1 className="text-xl font-medium">{props.productName}</h1>
         <span className="text-lg">{props.priceText}</span>
       </div>

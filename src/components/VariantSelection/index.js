@@ -9,7 +9,7 @@ const VariantSelection = (props) => {
       <div
         className={`${
           props.allowSelect ? 'hidden' : ''
-        } absolute bg-white bg-opacity-50 h-full w-full`}
+        } absolute bg-gray-800 bg-opacity-25 h-[80%] mt-10 w-full rounded-xl`}
       ></div>
       {props.children}
     </div>

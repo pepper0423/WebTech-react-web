@@ -8,12 +8,12 @@ import 'swiper/css/pagination';
 const IpadWITB = () => {
   return (
     <div className="mb-20">
-      <h2 className="text-4xl font-semibold text-center mt-20">
+      <h2 className="text-4xl font-semibold text-center mt-20 text-white">
         สิ่งที่มีมาให้ในกล่อง
       </h2>
       <div className="mt-14 hidden lg:block">
         <div
-          className="grid grid-cols-3"
+          className="grid grid-cols-3 rounded-xl"
           style={{
             backgroundColor: '#fafafa',
             maxHeight: '330px',
@@ -45,13 +45,13 @@ const IpadWITB = () => {
           </div>
         </div>
         <div className="grid grid-cols-3 mt-5">
-          <div className="text-center">
+          <div className="text-center text-white">
             <span>iPad</span>
           </div>
-          <div className="text-center">
+          <div className="text-center text-white">
             <span>USB-C Charge Cable</span>
           </div>
-          <div className="text-center">
+          <div className="text-center text-white">
             <span>อะแดปเตอร์แปลงไฟ USB-C ขนาด 20 วัตต์</span>
           </div>
         </div>

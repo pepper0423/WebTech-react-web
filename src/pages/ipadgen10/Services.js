@@ -4,10 +4,10 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 const IpadServices = () => {
   return (
     <div className="my-20">
-      <h2 className="text-4xl font-semibold text-center">
+      <h2 className="text-4xl font-semibold text-center text-white">
         มีอะไรดีๆ ให้ค้นพบอีกมากมาย
       </h2>
-      <span className="block mt-5 text-lg text-center">
+      <span className="block mt-5 text-lg text-center text-gray-300">
         ความบันเทิง เกมมากมาย ทั้งหมดนี้บน iPad ของคุณ
       </span>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-12">
@@ -33,7 +33,7 @@ const IpadServices = () => {
               รับชมรายการและภาพยนตร์ Apple Original
               ทั้งหมดได้จากทุกอุปกรณ์ของคุณ<sup>†</sup>
             </p>
-            <p className="text-center my-5" style={{ color: '#2997ff' }}>
+            <p className="text-center my-5 text-white font-medium hover:underline cursor-pointer">
               ดูเพิ่มเติม <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
             </p>
           </div>
@@ -61,7 +61,7 @@ const IpadServices = () => {
               Apple ได้ไม่จำกัด แบบไม่มีโฆษณา
               <sup>†</sup>
             </p>
-            <p className="text-center my-5" style={{ color: '#2997ff' }}>
+            <p className="text-center my-5 text-white font-medium hover:underline cursor-pointer">
               ดูเพิ่มเติม <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
             </p>
           </div>
