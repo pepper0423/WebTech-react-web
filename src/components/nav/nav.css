@@ -6,7 +6,7 @@
     }
 
     .navbar ul, .navbar li {
-        @apply flex flex-row p-[8px] justify-center opacity-90;
+        @apply flex flex-row p-[8px] justify-start opacity-90;
     }
 
     .navbar li {
@@ -20,7 +20,7 @@
 
 .bag-popover-body {
     margin-top: 10px;
-    width: 285px;
+    width: 250px;
     background-color: rgb(0, 0, 0);
     padding: 0 20px;
     border: 1px solid rgb(209, 213, 219);
@@ -28,7 +28,7 @@
   }
   
   .bag-popover-body::after {
-    left: 50%;
+    left: 54%;
     border-top: 1px solid rgb(209, 213, 219);
     border-left: 1px solid rgb(209, 213, 219);
     content: '';
@@ -45,4 +45,3 @@
     background-color: black;
     margin-top: 5px;
   }
-  
