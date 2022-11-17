@@ -40,6 +40,32 @@ const Help = () => {
           </h1>
         </div>
       </div>
+      <div className="my-12 grid grid-cols-1 justify-items-center text-center">
+        <div>
+          <h1 className="text-5xl text-white font-medium my-4">ค้นหาหัวข้อ</h1>
+          <div className="container flex mx-auto mt-4">
+            <div className="flex border-2 rounded">
+              <button className="flex items-center justify-center px-4 bg-red-200">
+                <svg
+                  className="w-6 h-6 text-white-800"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
+                </svg>
+              </button>
+              <input
+                type="text"
+                className="px-4 py-2"
+                style={{ width: '50vw' }}
+                placeholder="ค้นหาบริการช่วยเหลือ"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
       <div className="grid grid-cols-2 my-12 gap-y-8 md:grid-cols-3 justify-items-center xl:grid-cols-7 text-center xl:mx-96 xl:my-24">
         <div className="w-16 flex flex-col space-y-4">
           <img
@@ -99,7 +125,7 @@ const Help = () => {
         </div>
       </div>
       <hr />
-
+      <FormContact />
       <div
         className="grid grid-cols-1 my-12 text-center gap-20 xl:my-20 xl:mx-96 xl:grid-cols-3 xl:divide-x xl:gap-0 text-white"
       >
@@ -138,55 +164,6 @@ const Help = () => {
         </div>
       </div>
       <hr />
-
-      <div className="my-12 grid grid-cols-1 justify-items-center text-center">
-        <div>
-          <h1 className="text-5xl text-white font-medium my-4">ค้นหาหัวข้อ</h1>
-          <div className="container flex mx-auto mt-4">
-            <div className="flex border-2 rounded">
-              <button className="flex items-center justify-center px-4 bg-gray-200">
-                <svg
-                  className="w-6 h-6 text-gray-800"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
-                </svg>
-              </button>
-              <input
-                type="text"
-                className="px-4 py-2"
-                style={{ width: '50vw' }}
-                placeholder="ค้นหาบริการช่วยเหลือ"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="grid grid-cols-1  mx-10 xl:w-5/12 xl:mx-auto my-12 xl:grid-cols-2">
-        <div className="flex ">
-          <img
-            alt=""
-            src="assets/src_image/help/featured-section-promo-ios15-ipados15_2x.png"
-            className="object-scale-down "
-          />
-        </div>
-        <div className="mt-4 xl:pr-12">
-          <h1 className="text-3xl text-white font-medium my-4 ">
-            อัพเดทเป็น iOS 16 และ iPadOS 16
-          </h1>
-          <p className="text-xl mt-4 mb-14 text-gray-300">
-            คุณสมบัติใหม่ๆ ที่จะช่วยให้คุณใช้ iPhone และiPad
-            สานสัมพันธ์กับผู้อื่น มีสมาธิจดจ่อกับงาน และทำสิ่งต่างๆ
-            ได้มากกว่าเดิม
-          </p>
-          <span className="text-xl text-white cursor-pointer hover:underline">
-            รับเวอร์ชั่นล่าสุด <KeyboardArrowRightIcon />
-          </span>
-        </div>
-      </div>
       <div className="relative my-12 object-contain">
         <img
           alt=""
@@ -194,7 +171,7 @@ const Help = () => {
           className="object-contain h-full"
         />
         <div className="relative ml-4 xl:inset-y-1/4 xl:left-1/4 xl:absolute sm:py-5 sm:pl-5  ">
-          <h1 className="text-3xl text-black font-medium xl:text-white md:text-5xl mt-4">
+          <h1 className="text-3xl text-white font-medium xl:text-white md:text-5xl mt-4">
             รับบริการช่วยเหลือ
           </h1>
           <p className="text-xl text-gray-300 my-4 xl:text-white">
@@ -307,7 +284,28 @@ const Help = () => {
         </div>
       </div>
       <hr />
+<<<<<<< HEAD
       <FormContact />
+=======
+      <div className="justify-items-center">
+          <h1 className="text-3xl text-white font-medium xl:text-white md:text-5xl mt-4 text-center">
+          Apple Iconsiam
+          </h1>
+          <p className="text-xl mt-4 mb-14 text-gray-300 text-center">
+            เปิดให้บริการถึง 22:00
+          </p>
+          <br/>
+      <div class="">
+            <iframe id="map" width="100%" height="500"
+                var lat = "13.7262796"
+                var long = "100.5079776"
+                src="https://maps.google.com/maps?q=${lat},${long}&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                allowfullscreen>
+            </iframe>
+            
+        </div>
+      </div>
+>>>>>>> 6e2be9756996e6fb3544f1a2300f487e7fcf5c4d
       <Breadcrumb breadcrumb={['บริการช่วยเหลือ']} />
     </div>
   );
