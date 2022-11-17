@@ -13,7 +13,6 @@ import Footnote from '../../components/Footnote';
 
 import IpadWITB from './WhatsInTheBox';
 import IpadServices from './Services';
-import IpadFAQ from './FAQ';
 
 
 
@@ -401,9 +400,6 @@ const Ipadgen10 = () => {
         </div>
         <IpadWITB />
         <IpadServices />
-      </div>
-      <div className='bg-white'>
-        <IpadFAQ />
       </div>
       <Footnote>
         <p className="text-xs text-gray-300">

@@ -14,7 +14,6 @@ import Footnote from '../../components/Footnote';
 import Iphone14ProFeatures from './Features';
 import Iphone14ProWITB from './WhatsInTheBox';
 import Iphone14Compare from '../Iphone14/Compare';
-import Iphone14ProFAQ from './FAQ';
 
 
 
@@ -649,9 +648,6 @@ const Iphone14Pro = () => {
         <Iphone14ProFeatures />
         <Iphone14ProWITB />
         <Iphone14Compare />
-      </div>
-      <div className='bg-white'>
-        <Iphone14ProFAQ />
       </div>
       <Footnote>
         <p className="text-xs text-gray-200">

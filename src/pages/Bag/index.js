@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 
 import Item from './Item';
 import Recommendations from './Recommentdations';
-import BagFAQ from './FAQ';
 
 
 
@@ -138,9 +137,6 @@ function Bag() {
                     </div>
                 </div>
                 <Recommendations />
-                <div className='bg-white'>
-                    <BagFAQ />
-                </div>
                 <Footnote>
                     <p className="text-xs text-gray-400">
                         ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
@@ -185,9 +181,6 @@ function Bag() {
                     </div>
                 </div>
                 <Recommendations />
-                <div className='bg-white'>
-                    <BagFAQ />
-                </div>
                 <Footnote>
                     <p className="text-xs text-gray-400">
                         ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
