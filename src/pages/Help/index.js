@@ -284,9 +284,7 @@ const Help = () => {
         </div>
       </div>
       <hr />
-<<<<<<< HEAD
       <FormContact />
-=======
       <div className="justify-items-center">
           <h1 className="text-3xl text-white font-medium xl:text-white md:text-5xl mt-4 text-center">
           Apple Iconsiam
@@ -305,7 +303,6 @@ const Help = () => {
             
         </div>
       </div>
->>>>>>> 6e2be9756996e6fb3544f1a2300f487e7fcf5c4d
       <Breadcrumb breadcrumb={['บริการช่วยเหลือ']} />
     </div>
   );
