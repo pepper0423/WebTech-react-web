@@ -12,7 +12,6 @@ import Footnote from '../../components/Footnote';
 
 import Iphone14WITB from './WhatsInTheBox';
 import Iphone14Compare from './Compare';
-import Iphone14FAQ from './FAQ';
 
 
 const iphone14Price = {
@@ -646,9 +645,6 @@ const Iphone14 = () => {
           </video>
         </div>
         <Iphone14Compare />
-      </div>
-      <div className='bg-white'>
-        <Iphone14FAQ />
       </div>
       <Footnote>
         <p className="text-xs text-gray-200">
