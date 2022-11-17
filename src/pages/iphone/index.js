@@ -13,7 +13,7 @@ function Iphone() {
             </header>
             <div className='pt-2 mt-16 w-100 grid grid-cols-2 md:grid-cols-2 text-center'>
                 <div className='Text'>
-                    <h3 className='a'>ใหม่</h3>
+                    <h3 className='a' >ใหม่</h3>
                     <h3 className='b'>iPhone14</h3>
                     <h1 className='c d'>ใหญ่เจอใหญ่กว่า</h1>
                     <h1 className='c a'>เริ่มต้นที่ ฿32,900</h1><br></br>
@@ -77,21 +77,9 @@ function Iphone() {
 
 
             <div className='bg-iPhone14Pro'>
-                <div className=' grid grid-cols-2 md:grid-cols-2 text-center mt-12'>
-                <div className="iphone14txt" >
-                    <h3 className='a c'>ใหม่</h3>
-                    <h3 className='b c'>iPhone14 Pro</h3>
-                    <h1 className='c e'>โปร ยิ่งกว่าโปร</h1>
-                    <h1 className='a c'>เริ่มต้นที่ ฿41,900</h1>
-                </div>
-                <div>
-                    <center>
-                        <img src="assets/baners/iphone14pro.png" alt='' />
-                    </center>
-                    </div>
-                    
-                
+                <div className=''>
             </div>
+            
             <div className='row'>
             <div className='bg-iPhone14 grid grid-cols-2 md:grid-cols-2 text-center mt-12 dark '>
             <center><img className='dark bigger' src="assets/products/iphone14pro/iphone14pro-pro-family.png" alt='' /></center>
