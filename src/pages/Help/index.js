@@ -45,9 +45,9 @@ const Help = () => {
           <h1 className="text-5xl text-white font-medium my-4">ค้นหาหัวข้อ</h1>
           <div className="container flex mx-auto mt-4">
             <div className="flex border-2 rounded">
-              <button className="flex items-center justify-center px-4 bg-gray-200">
+              <button className="flex items-center justify-center px-4 bg-red-200">
                 <svg
-                  className="w-6 h-6 text-gray-800"
+                  className="w-6 h-6 text-white-800"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -164,28 +164,6 @@ const Help = () => {
         </div>
       </div>
       <hr />
-      <div className="grid grid-cols-1  mx-10 xl:w-5/12 xl:mx-auto my-12 xl:grid-cols-2">
-        <div className="flex ">
-          <img
-            alt=""
-            src="assets/src_image/help/featured-section-promo-ios15-ipados15_2x.png"
-            className="object-scale-down "
-          />
-        </div>
-        <div className="mt-4 xl:pr-12">
-          <h1 className="text-3xl text-white font-medium my-4 ">
-            อัพเดทเป็น iOS 16 และ iPadOS 16
-          </h1>
-          <p className="text-xl mt-4 mb-14 text-gray-300">
-            คุณสมบัติใหม่ๆ ที่จะช่วยให้คุณใช้ iPhone และiPad
-            สานสัมพันธ์กับผู้อื่น มีสมาธิจดจ่อกับงาน และทำสิ่งต่างๆ
-            ได้มากกว่าเดิม
-          </p>
-          <span className="text-xl text-white cursor-pointer hover:underline">
-            รับเวอร์ชั่นล่าสุด <KeyboardArrowRightIcon />
-          </span>
-        </div>
-      </div>
       <div className="relative my-12 object-contain">
         <img
           alt=""
@@ -193,7 +171,7 @@ const Help = () => {
           className="object-contain h-full"
         />
         <div className="relative ml-4 xl:inset-y-1/4 xl:left-1/4 xl:absolute sm:py-5 sm:pl-5  ">
-          <h1 className="text-3xl text-black font-medium xl:text-white md:text-5xl mt-4">
+          <h1 className="text-3xl text-white font-medium xl:text-white md:text-5xl mt-4">
             รับบริการช่วยเหลือ
           </h1>
           <p className="text-xl text-gray-300 my-4 xl:text-white">
@@ -306,36 +284,22 @@ const Help = () => {
         </div>
       </div>
       <hr />
-      <div className="grid grid-cols-1 justify-items-center my-12 mx-10">
-        <div>
-          <h1 className="text-3xl text-white font-medium my-4">
-            โปรแกรมการให้บริการของ Apple
+      <div className="justify-items-center">
+          <h1 className="text-3xl text-white font-medium xl:text-white md:text-5xl mt-4 text-center">
+          Apple Iconsiam
           </h1>
-          <ul
-            className="list-none space-y-2 text-xl text-white"
-          >
-            <li className='cursor-pointer hover:underline'>
-              โปรแกรมการให้บริการสำหรับ iPhone 14 และ iPhone 14 Pro
-              สำหรับปัญหาเครื่องในกรณีที่ไม่มีเสียง
-              <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-            </li>
-            <li className='cursor-pointer hover:underline'>
-              โปรแกรมการเปลี่ยนโมดูลจอแสดงผล iPhone 13
-              สำหรับปัญหาเกี่ยวกับพื้นผิวระบบสัมผัส
-            </li>
-            <li className='cursor-pointer hover:underline'>โปรแกรมการบริการ AirPods Pro สำหรับปัญหาเกี่ยวกับเสียง</li>
-            <li className='cursor-pointer hover:underline'>
-              โปรแกรมการให้บริการ iPad Air (รุ่นที่ 3)
-              สำหรับปัญหาหน้าจอว่างเปล่า
-            </li>
-            <li className='cursor-pointer hover:underline'>โปรแกรมการเรียกคืนแบตเตอรี่ MacBook Pro รุ่น 15 นิ้ว</li>
-            <li className='cursor-pointer hover:underline'>
-              ดูโปรแกรมทั้งหมด
-              <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
-            </li>
-          </ul>
-        </div>
-        <div>
+          <p className="text-xl mt-4 mb-14 text-gray-300 text-center">
+            เปิดให้บริการถึง 22:00
+          </p>
+          <br/>
+      <div class="">
+            <iframe id="map" width="100%" height="500"
+                var lat = "13.7262796"
+                var long = "100.5079776"
+                src="https://maps.google.com/maps?q=${lat},${long}&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                allowfullscreen>
+            </iframe>
+            
         </div>
       </div>
       <Breadcrumb breadcrumb={['บริการช่วยเหลือ']} />
