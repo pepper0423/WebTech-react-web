@@ -8,7 +8,7 @@ const Help = () => {
 
   return (
     <div className='bg-netflix-black'>
-      <Nav disableSticky={true}/>
+      <Nav disableSticky={true} />
       <div id="title">
         <div
           className="hidden md:block"
@@ -284,23 +284,24 @@ const Help = () => {
         </div>
       </div>
       <hr />
-      <FormContact />
       <div className="justify-items-center">
-          <h1 className="text-3xl text-white font-medium xl:text-white md:text-5xl mt-4 text-center">
+        <h1 className="text-3xl text-white font-medium xl:text-white md:text-5xl mt-4 text-center">
           Apple Iconsiam
-          </h1>
-          <p className="text-xl mt-4 mb-14 text-gray-300 text-center">
-            เปิดให้บริการถึง 22:00
-          </p>
-          <br/>
-      <div class="">
-            <iframe id="map" width="100%" height="500"
-                var lat = "13.7262796"
-                var long = "100.5079776"
-                src="https://maps.google.com/maps?q=${lat},${long}&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                allowfullscreen>
-            </iframe>
-            
+        </h1>
+        <p className="text-xl mt-4 mb-14 text-gray-300 text-center">
+          เปิดให้บริการถึง 22:00
+        </p>
+        <br />
+        <div>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.869738528118!2d100.50597522865358!3d13.726335270774802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2994df8fca6cf%3A0xa752fe700b7fbc5f!2z4LmB4Lit4Lib4LmA4Lib4Li04LmJ4LilIOC5hOC4reC4hOC4reC4meC4quC4ouC4suC4oQ!5e0!3m2!1sth!2sth!4v1668678009134!5m2!1sth!2sth" 
+            width="100%" 
+            height="450" 
+            style={{border:"0"}} 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
       <Breadcrumb breadcrumb={['บริการช่วยเหลือ']} />
