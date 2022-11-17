@@ -15,9 +15,7 @@
     margin-top: 12%;
 }
 .border{
-    border-top: 1px;
-    border-style: solid;
-    border-color: rgb(173, 173, 173);
+    border: 3px solid rgb(173, 173, 173);
     
 }
 .containericon{
@@ -31,13 +29,8 @@
 }
 .header{
     margin-top: 50px;
-    background-color: rgba(245,245,247,255);
     float: right;
-
 }
 .headertext{
     margin-top: 20px;
-}
-.body{
-    background-color: rgba(245,245,247,255);
 }

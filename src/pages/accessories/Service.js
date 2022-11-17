@@ -3,20 +3,20 @@ import './accessory.css';
 
 const Service = () => {
   return (
-    <div className="my-20 service">
-            <h2 className="text-4xl font-semibold text-center mt-20">
+    <div className="py-20 service">
+      <h2 className="text-4xl font-semibold text-center mt-8 text-white pb-4">
         บริการของเรา
       </h2>
       <div className="grid grid-cols-4 gap-4">
         <div className="keyfeature-col keyfeature-col-span-4 grid grid-cols-1">
           <div className="p-7">
-            <p className="text-6xl font-large text-black">
-                จัดส่งฟรี
+            <p className="text-6xl font-large text-[#bbbbbb]">
+              จัดส่งฟรี
             </p>
             <br></br>
             <p className='text-4xl font-medium text-gray-500'>
-            เลือกรับบริการจัดส่งฟรี
-หรือไปรับสินค้าที่มีพร้อมจำหน่ายได้ที่ Apple Store
+              เลือกรับบริการจัดส่งฟรี
+              หรือไปรับสินค้าที่มีพร้อมจำหน่ายได้ที่ Apple Store
             </p>
             <img
               style={{ scale: '1' }}
@@ -31,7 +31,7 @@ const Service = () => {
         <div className="keyfeature-col keyfeature-col-span-2">
           <div className="p-7">
             <p className="text-3xl font-medium text-gray-500">
-              <span className="text-black">บริการด้านการเงิน</span>{' '}<br></br><br></br>
+              <span className="text-[#bbbbbb]">บริการด้านการเงิน</span>{' '}<br></br><br></br>
               มีบริการผ่อนชำระ 0%
             </p>
           </div>
@@ -46,8 +46,8 @@ const Service = () => {
 
         <div className="keyfeature-col keyfeature-col-span-2">
           <div className="p-7">
-          <p className="text-3xl font-medium text-gray-500">
-              <span className="text-black">บริการด้านการเงิน</span>{' '}<br></br><br></br>
+            <p className="text-3xl font-medium text-gray-500">
+              <span className="text-[#bbbbbb]">ความข่วยเเหลือเกี่ยวกับการซื้อ</span>{' '}<br></br><br></br>
               <p className='text-gray-500'>เมื่อมีคำถาม</p><p className='text-gray-500'>โทรหา Specialist หรือแชทออนไลน์</p><p className='text-gray-500'>โทร. 1800-01-9209</p>
             </p>
           </div>
@@ -60,7 +60,7 @@ const Service = () => {
           </div>
         </div>
 
-        </div>
+      </div>
 
     </div>
   );

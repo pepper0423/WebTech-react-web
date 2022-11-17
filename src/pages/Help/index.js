@@ -2,14 +2,13 @@ import React from 'react';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import Nav from '../../components/nav';
 import Breadcrumb from '../../components/Breadcrumb';
-import Footnote from '../../components/Footnote';
 import FormContact from '../../components/FormContact';
 
 const Help = () => {
-    
+
   return (
-    <>
-      <Nav />
+    <div className='bg-netflix-black'>
+      <Nav disableSticky={true}/>
       <div id="title">
         <div
           className="hidden md:block"
@@ -41,62 +40,68 @@ const Help = () => {
           </h1>
         </div>
       </div>
-      <div className="grid grid-cols-2 my-12 gap-y-8 md:grid-cols-3 justify-items-center xl:grid-cols-7 text-center xl:mx-96 xl:my-24 ">
+      <div className="grid grid-cols-2 my-12 gap-y-8 md:grid-cols-3 justify-items-center xl:grid-cols-7 text-center xl:mx-96 xl:my-24">
         <div className="w-16 flex flex-col space-y-4">
           <img
             alt=""
             src="assets/src_image/help/homepage_productnav_iphone_family_2x.png"
+            className='invert'
           />
-          <span>iPhone</span>
+          <span className='text-white'>iPhone</span>
         </div>
         <div className="w-16 flex flex-col space-y-4">
           <img
             alt=""
             src="assets/src_image/help/homepage_productnav_imac_family_2x.png"
+            className='invert'
           />
-          <span>Mac</span>
+          <span className='text-white'>Mac</span>
         </div>
         <div className="w-16 flex flex-col space-y-4">
           <img
             alt=""
             src="assets/src_image/help/homepage_productnav_ipad_family_2x.png"
+            className='invert'
           />
-          <span>iPad</span>
+          <span className='text-white'>iPad</span>
         </div>
         <div className="w-16 flex flex-col space-y-4">
           <img
             alt=""
             src="assets/src_image/help/homepage_productnav_apple_watch_2x.png"
+            className='invert'
           />
-          <span>Watch</span>
+          <span className='text-white'>Watch</span>
         </div>
         <div className="w-16 flex flex-col space-y-4">
           <img
             alt=""
             src="assets/src_image/help/homepage-productdrawer-airpods-dark_2x.png"
+            className='invert'
           />
-          <span>AirPods</span>
+          <span className='text-white'>AirPods</span>
         </div>
         <div className="w-16 flex flex-col space-y-4">
           <img
             alt=""
             src="assets/src_image/help/homepage_productdrawer_applemusic_2x.png"
+            className='invert'
           />
-          <span>Music</span>
+          <span className='text-white'>Music</span>
         </div>
         <div className="w-16 flex flex-col space-y-4">
           <img
             alt=""
             src="assets/src_image/help/homepage-productdrawer-appletv_2x.png"
+            className='invert'
           />
-          <span>TV</span>
+          <span className='text-white'>TV</span>
         </div>
       </div>
       <hr />
-      
+
       <div
-        className="grid grid-cols-1 my-12 text-center gap-20 xl:my-20 xl:mx-96 xl:grid-cols-3 xl:divide-x xl:gap-0"
-        style={{ color: '#0070c9' }}
+        className="grid grid-cols-1 my-12 text-center gap-20 xl:my-20 xl:mx-96 xl:grid-cols-3 xl:divide-x xl:gap-0 text-white"
       >
         <div className="flex-1 ">
           <img
@@ -104,7 +109,7 @@ const Help = () => {
             src="assets/src_image/help/promo-icon-homepage-password_2x.png"
             className="mx-auto mb-4 w-10"
           />
-          <span>
+          <span className='hover:underline cursor-pointer font-semibold'>
             ลืม Apple ID หรือรหัสผ่าน
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </span>
@@ -115,7 +120,7 @@ const Help = () => {
             src="assets/src_image/help/promo-icon-homepage-subscriptions_2x.png"
             className="mx-auto mb-4 w-10"
           />
-          <span>
+          <span className='hover:underline cursor-pointer font-semibold'>
             การเรียกเก็บเงินและการสมัครรับ
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </span>
@@ -126,22 +131,22 @@ const Help = () => {
             src="assets/src_image/help/promo-icon-find-my_2x.png"
             className="mx-auto mb-4 w-10"
           />
-          <span>
+          <span className='hover:underline cursor-pointer font-semibold'>
             ค้นหาของฉัน
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </span>
         </div>
       </div>
       <hr />
-      
+
       <div className="my-12 grid grid-cols-1 justify-items-center text-center">
         <div>
-          <h1 className="text-5xl text-black font-medium my-4">ค้นหาหัวข้อ</h1>
+          <h1 className="text-5xl text-white font-medium my-4">ค้นหาหัวข้อ</h1>
           <div className="container flex mx-auto mt-4">
             <div className="flex border-2 rounded">
-              <button className="flex items-center justify-center px-4 ">
+              <button className="flex items-center justify-center px-4 bg-gray-200">
                 <svg
-                  className="w-6 h-6 text-gray-600"
+                  className="w-6 h-6 text-gray-800"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -164,20 +169,20 @@ const Help = () => {
         <div className="flex ">
           <img
             alt=""
-            src="assets/src_image/help/featured-section-promo-ios15-ipados15_2x.jpg"
+            src="assets/src_image/help/featured-section-promo-ios15-ipados15_2x.png"
             className="object-scale-down "
           />
         </div>
         <div className="mt-4 xl:pr-12">
-          <h1 className="text-3xl text-black font-medium my-4 ">
+          <h1 className="text-3xl text-white font-medium my-4 ">
             อัพเดทเป็น iOS 16 และ iPadOS 16
           </h1>
-          <p className="text-xl mt-4 mb-14 text-gray-600">
+          <p className="text-xl mt-4 mb-14 text-gray-300">
             คุณสมบัติใหม่ๆ ที่จะช่วยให้คุณใช้ iPhone และiPad
             สานสัมพันธ์กับผู้อื่น มีสมาธิจดจ่อกับงาน และทำสิ่งต่างๆ
             ได้มากกว่าเดิม
           </p>
-          <span className="text-xl " style={{ color: '#0070c9' }}>
+          <span className="text-xl text-white cursor-pointer hover:underline">
             รับเวอร์ชั่นล่าสุด <KeyboardArrowRightIcon />
           </span>
         </div>
@@ -192,14 +197,14 @@ const Help = () => {
           <h1 className="text-3xl text-black font-medium xl:text-white md:text-5xl mt-4">
             รับบริการช่วยเหลือ
           </h1>
-          <p className="text-xl text-gray-600 my-4 xl:text-white">
+          <p className="text-xl text-gray-300 my-4 xl:text-white">
             เลือกผลิตภัณฑ์ แล้วเราจะหาวิธีแก้ปัญหาที่ดีที่สุดให้กับคุณ
             <br />
           </p>
-          <p className="text-xl " style={{ color: '#6BF' }}>
+          <p className="text-xl cursor-pointer hover:underline" style={{ color: '#6BF' }}>
             เริ่มเลย <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </p>
-          <p className="text-xl " style={{ color: '#6BF' }}>
+          <p className="text-xl cursor-pointer hover:underline" style={{ color: '#6BF' }}>
             ดาวน์โหลดแอพ Apple Support{' '}
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </p>
@@ -215,15 +220,15 @@ const Help = () => {
           />
         </div>
         <div className="mt-4 xl:pr-12">
-          <h1 className="text-3xl text-black font-medium my-4 ">
+          <h1 className="text-3xl text-white font-medium my-4 ">
             บริการและความช่วยเหลือจากผู้เชี่ยวชาญของ Apple
           </h1>
-          <p className="text-xl mt-4 mb-14 text-gray-600">
+          <p className="text-xl mt-4 mb-14 text-gray-300">
             ผลิตภัณฑ์ AppleCare
             มีตัวเลือกบริการด้านฮาร์ดแวร์เพิ่มเติมและการสนับสนุนด้านเทคนิคโดยผู้เชี่ยวชาญจาก
             Apple
           </p>
-          <p className="text-xl " style={{ color: '#0070c9' }}>
+          <p className="text-xl text-white cursor-pointer hover:underline">
             ดูข้อมูลเกี่ยวกับแผน AppleCare
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </p>
@@ -239,17 +244,17 @@ const Help = () => {
           />
         </div>
         <div className="mx-10 xl:w-7/12">
-          <h1 className="text-5xl text-black font-medium my-4">
+          <h1 className="text-5xl text-white font-medium my-4">
             การรับประกันและการซ่อมแซม
           </h1>
           <div className="mx-auto max-w-screen-md px-5">
-            <p className="text-xl text-gray-600 ">
-              <span style={{ color: '#0070c9' }}>
+            <p className="text-xl text-gray-300 ">
+              <span className='text-white font-mediumn cursor-pointer hover:underline'>
                 ดูว่าผลิตภัณฑ์ Apple ของคุณเข้าเกณฑ์
               </span>
               การรับบริการและบริการช่วยเหลือภายใต้การรับประกันแบบจำกัดของเราหรือไม่
               มีการซ่อมที่อยู่ระหว่างดำเนินการแล้วใช่หรือไม่{' '}
-              <span style={{ color: '#0070c9' }}>มาตรวจสอบสถานะกัน</span>
+              <span className='text-white font-mediumn cursor-pointer hover:underline'>มาตรวจสอบสถานะกัน</span>
             </p>
           </div>
         </div>
@@ -259,19 +264,19 @@ const Help = () => {
         โปรดระวังชิ้นส่วนของปลอม
       </h1>
       <div className="mx-auto max-w-screen-md mb-10 px-5">
-        <p className="text-center text-xl text-gray-600">
+        <p className="text-center text-xl text-gray-300">
           อะแดปเตอร์แปลงไฟและแบตเตอรี่ที่เป็นของปลอมหรือของผู้ให้บริการรายอื่นอาจไม่ได้รับการออกแบบมาอย่างเหมาะ
           สมและสามารถส่งผลให้เกิดปัญหาด้านความปลอดภัยได้
           เพื่อให้แน่ใจว่าคุณได้รับแบตเตอรี่ Apple ของแท้ในระหว่าง
           ที่ส่งเครื่องเข้ารับการเปลี่ยนแบตเตอรี่ เราขอแนะนำให้คุณไปรับบริการที่{' '}
-          <span style={{ color: '#0070c9' }}>Apple Store</span> หรือ{' '}
-          <span style={{ color: '#0070c9' }}>
+          <span className='text-white font-mediumn cursor-pointer hover:underline'>Apple Store</span> หรือ{' '}
+          <span className='text-white font-mediumn cursor-pointer hover:underline'>
             ผู้ให้บริการที่ได้รับอนุญาตจาก Apple
           </span>{' '}
           หากคุณจำเป็นต้องเปลี่ยนเป็นอะแดปเตอร์ใหม่เพื่อชาร์จอุปกรณ์ Apple
           เราขอแนะนำให้คุณซื้ออะแดปเตอร์แปลงไฟของ Apple
         </p>
-        <p className="mt-3 text-center text-xl text-gray-600">
+        <p className="mt-3 text-center text-xl text-gray-300">
           นอกจากนี้
           จอแสดงผลหน้าจอที่ไม่ใช่ชิ้นส่วนของแท้ที่นำมาเปลี่ยนอาจทำงานผิดปกติและส่งผลให้คุณภาพของภาพลดลง
           การซ่อมหน้าจอที่ได้รับการรับรองจาก Apple จะดำเนินการโดยผู้เชี่ยว
@@ -281,14 +286,14 @@ const Help = () => {
       <hr />
       <div className="grid grid-cols-1  mx-10 xl:w-5/12 xl:mx-auto my-12 xl:grid-cols-2">
         <div className="mt-4 xl:pr-12">
-          <h1 className="text-3xl text-black font-medium my-4 xl:text-5xl ">
+          <h1 className="text-3xl text-white font-medium my-4 xl:text-5xl ">
             บริการช่วยเหลือของฉัน
           </h1>
-          <p className="text-xl mt-4 mb-14 text-gray-600">
+          <p className="text-xl mt-4 mb-14 text-gray-300">
             ตรวจสอบความคุ้มครองของบริการและการสนับสนุน
             และรับข้อมูลเกี่ยวกับผลิตภัณฑ์ Apple ของคุณได้ในที่เดียว
           </p>
-          <p className="text-xl " style={{ color: '#0070c9' }}>
+          <p className="text-xl text-white font-mediumn cursor-pointer hover:underline">
             ดูข้อมูลเกี่ยวกับแผน AppleCare
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </p>
@@ -302,32 +307,31 @@ const Help = () => {
         </div>
       </div>
       <hr />
-      <FormContact/>
+      <FormContact />
       <div className="grid grid-cols-1 justify-items-center my-12 mx-10">
         <div>
-          <h1 className="text-3xl text-black font-medium my-4">
+          <h1 className="text-3xl text-white font-medium my-4">
             โปรแกรมการให้บริการของ Apple
           </h1>
           <ul
-            className="list-none space-y-2 text-xl"
-            style={{ color: '#0070c9' }}
+            className="list-none space-y-2 text-xl text-white"
           >
-            <li>
+            <li className='cursor-pointer hover:underline'>
               โปรแกรมการให้บริการสำหรับ iPhone 14 และ iPhone 14 Pro
               สำหรับปัญหาเครื่องในกรณีที่ไม่มีเสียง
               <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
             </li>
-            <li>
+            <li className='cursor-pointer hover:underline'>
               โปรแกรมการเปลี่ยนโมดูลจอแสดงผล iPhone 13
               สำหรับปัญหาเกี่ยวกับพื้นผิวระบบสัมผัส
             </li>
-            <li>โปรแกรมการบริการ AirPods Pro สำหรับปัญหาเกี่ยวกับเสียง</li>
-            <li>
+            <li className='cursor-pointer hover:underline'>โปรแกรมการบริการ AirPods Pro สำหรับปัญหาเกี่ยวกับเสียง</li>
+            <li className='cursor-pointer hover:underline'>
               โปรแกรมการให้บริการ iPad Air (รุ่นที่ 3)
               สำหรับปัญหาหน้าจอว่างเปล่า
             </li>
-            <li>โปรแกรมการเรียกคืนแบตเตอรี่ MacBook Pro รุ่น 15 นิ้ว</li>
-            <li>
+            <li className='cursor-pointer hover:underline'>โปรแกรมการเรียกคืนแบตเตอรี่ MacBook Pro รุ่น 15 นิ้ว</li>
+            <li className='cursor-pointer hover:underline'>
               ดูโปรแกรมทั้งหมด
               <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
             </li>
@@ -335,11 +339,9 @@ const Help = () => {
         </div>
         <div>
         </div>
-        
       </div>
       <Breadcrumb breadcrumb={['บริการช่วยเหลือ']} />
-      <Footnote />
-    </>
+    </div>
   );
 };
 

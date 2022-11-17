@@ -2,7 +2,7 @@
 
 @layer components {
     .apple-btn {
-        @apply bg-[#0071e3] hover:bg-[#0077ed];
+        @apply bg-[#E50914] hover:bg-[#ff1c27];
     }
     
     .apple-btn-secondary {

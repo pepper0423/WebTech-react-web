@@ -4,11 +4,8 @@ import { Link } from 'react-router-dom';
 import Itemslider from '../../components/itemslider';
 import Service from './Service';
 
-
-
-
 function Accessories() {
-    
+
     const accessData = [
         { id: 1, itemName: 'Airpod', linkto: '', itemPic: '../assets/accesory/list/common/MV7N2.png' },
         { id: 2, itemName: 'สายชาร์จไร้สาย', linkto: '', itemPic: '../assets/accesory/list/common/MLWJ3.png' },
@@ -43,75 +40,75 @@ function Accessories() {
     ];
 
     return (
-        <div className='body'>
-            <Nav />
+        <div className='bg-netflix-black'>
+            <Nav disableSticky={true} />
             <div className='columns-2'>
-            <div className='header'>
-                <div className='headertext text-5xl font-bold'>
-                    <h1>มิกซ์แอนด์แมทช์</h1>
-                    <h1>กับ MagSafe</h1>
+                <div className='header'>
+                    <div className='headertext text-5xl font-bold text-white'>
+                        <h1>มิกซ์แอนด์แมทช์</h1>
+                        <h1>กับ MagSafe</h1>
+                    </div>
+                    <div className='smallertext text-2xl text-white'>
+                        <h1>
+                            ติดเข้ากับเคสและกระเป๋าสตางค์
+                        </h1>
+                        <h1>
+                            MagSafe หรือที่ชาร์จแบบไร้สาย
+                        </h1>
+                    </div>
                 </div>
-                <div className='smallertext text-2xl'>
-                    <h1>
-                        ติดเข้ากับเคสและกระเป๋าสตางค์
-                    </h1>
-                    <h1>
-                    MagSafe หรือที่ชาร์จแบบไร้สาย
-                    </h1>
+                <div>
+                    <img src='assets/accesory/magsafe-202209_GEO_TH.png' alt='' />
                 </div>
-            </div>
-            <div className=''>
-                <img src='assets/accesory/magsafe-202209_GEO_TH.jpg' alt='' />
-            </div>
             </div>
             <center className='mt-10'>
-                <div className='Usein mt-10'>
-                    <h1 className='upperline size '>
-                        <h1 className='mt-10 text-3xl font-bold'>
+                <div className='mt-10'>
+                    <h1 className='upperline size'>
+                        <h1 className='mt-10 text-3xl font-bold text-white'>
                             ใช้กับ
                         </h1>
                     </h1>
 
                     <div className='containericon columns-4 mx-0 mb-10'>
-                        <div className='border itemsize rounded-full bg'>
+                        <div className='border itemsize rounded-full'>
                             <div className='ipad'>
-                            <Link to='/ipad'>
-                                <img
-                                    src='assets/accesory/icon-product-ipad.png'
-                                    alt=''
-                                    className='icon'
-                                />
-                            </Link>
+                                <Link to='/ipad'>
+                                    <img
+                                        src='assets/accesory/icon-product-ipad.png'
+                                        alt=''
+                                        className='icon invert'
+                                    />
+                                </Link>
                             </div>
                         </div>
-                        
-                        <div className='border itemsize rounded-full bg'>
+
+                        <div className='border itemsize rounded-full'>
                             <div className='ipad'>
-                            <Link to='/iphone'>
-                                <img
-                                    src='assets/accesory/icon-product-iphone.png'
-                                    alt=''
-                                    className='icon'
-                                />
-                            </Link>
+                                <Link to='/iphone'>
+                                    <img
+                                        src='assets/accesory/icon-product-iphone.png'
+                                        alt=''
+                                        className='icon invert'
+                                    />
+                                </Link>
                             </div>
                         </div>
-                        
-                        <div className='border itemsize rounded-full bg'>
+
+                        <div className='border itemsize rounded-full'>
                             <div className='ipad'>
                                 <img
                                     src='assets/accesory/icon-product-mac.png'
                                     alt=''
-                                    className='icon'
+                                    className='icon invert'
                                 />
                             </div>
                         </div>
-                        <div className='border itemsize rounded-full bg'>
+                        <div className='border itemsize rounded-full'>
                             <div className='ipad'>
                                 <img
                                     src='assets/accesory/icon-product-watch.png'
                                     alt=''
-                                    className='icon'
+                                    className='icon invert'
                                 />
                             </div>
                         </div>
@@ -120,15 +117,15 @@ function Accessories() {
 
                 <div className='upperline size2'>
                     <div className='container mx-auto py-12'>
-                    <Itemslider title='ของขวัญสำหรับเทศกาลวันหยุด' rowID='1' toItem='accessories' itemArr={accessData} />
-                    <Itemslider title='เสริมความสะดวกให้ iPhone ของคุณ' rowID='2' toItem='accessories' itemArr={accessData1} />
-                    <Itemslider title='เสริมความสะดวกให้ iPad ของคุณ' rowID='3' toItem='accessories' itemArr={accessData2} />
-                    <Itemslider title='ตกแต่ง Apple Watch' rowID='4' toItem='accessories' itemArr={accessData3} />
-                </div>
+                        <Itemslider title='ของขวัญสำหรับเทศกาลวันหยุด' rowID='1' toItem='/' itemArr={accessData} />
+                        <Itemslider title='เสริมความสะดวกให้ iPhone ของคุณ' rowID='2' toItem='/' itemArr={accessData1} />
+                        <Itemslider title='เสริมความสะดวกให้ iPad ของคุณ' rowID='3' toItem='/' itemArr={accessData2} />
+                        <Itemslider title='ตกแต่ง Apple Watch' rowID='4' toItem='/' itemArr={accessData3} />
+                    </div>
                 </div>
                 <Service />
             </center>
-            
+
         </div>
     );
 }

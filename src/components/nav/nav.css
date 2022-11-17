@@ -2,11 +2,11 @@
 
 @layer components {
     .navbar {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(255, 0, 0, 0.8);
     }
 
     .navbar ul, .navbar li {
-        @apply flex flex-row p-[8px] justify-center opacity-75;
+        @apply flex flex-row p-[8px] justify-center opacity-90;
     }
 
     .navbar li {
@@ -21,7 +21,7 @@
 .bag-popover-body {
     margin-top: 10px;
     width: 285px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     padding: 0 20px;
     border: 1px solid rgb(209, 213, 219);
     border-radius: 16px;
@@ -42,7 +42,7 @@
     -webkit-transform-origin: 0% 0;
     transform-origin: 0% 0;
     z-index: 9 !important;
-    background-color: white;
+    background-color: black;
     margin-top: 5px;
   }
   

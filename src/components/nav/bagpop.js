@@ -31,21 +31,21 @@ const Bagpop = () => {
             <Popover id={id} open={open} anchorEl={anchorEle} onClose={handleClose} anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }} transformOrigin={{ vertical: 'top', horizontal: 'center' }} elevation={0}>
                 <div className='bag-popover-body'>
                     <BagItems bag={bag} />
-                    <AppleButton className='w-full'>ชำระเงิน</AppleButton>
+                    <Link to='/bag'><AppleButton className='w-full'>ชำระเงิน</AppleButton></Link>
                     <div className='my-3 divide-y divide-gray-300'>
                         <Link to='/bag'>
-                            <div className='flex py-2 text-small text-apple-blue hover:underline'>
-                                <BsBag className='fill-apple-blue' />
-                                <span className='ml-2'>ถุง {!!bag ? `(${bag.length})` : '(0)'}</span>
+                            <div className='flex py-2 text-md text-apple-white hover:underline'>
+                                <BsBag className='fill-apple-white' />
+                                <span className='ml-2 font-semibold'>ถุง {!!bag ? `(${bag.length})` : '(0)'}</span>
                             </div>
                         </Link>
-                        <div className='flex py-2 text-small text-apple-blue hover:underline cursor-pointer'>
-                            <BsBookmark className='fill-apple-blue' />
-                            <span className='ml-2'>รายการโปรด</span>
+                        <div className='flex py-2 text-md text-apple-white hover:underline cursor-pointer'>
+                            <BsBookmark className='fill-apple-white' />
+                            <span className='ml-2 font-semibold '>รายการโปรด</span>
                         </div>
-                        <div className='flex py-2 text-small text-apple-blue hover:underline cursor-pointer'>
-                            <BsBoxSeam className='fill-apple-blue' />
-                            <span className='ml-2'>คำสั่งซื้อ</span>
+                        <div className='flex py-2 text-md text-apple-white hover:underline cursor-pointer'>
+                            <BsBoxSeam className='fill-apple-white' />
+                            <span className='ml-2 font-semibold '>คำสั่งซื้อ</span>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ const BagItems = (props) => {
         );
     } else {
         return (
-            <div className='text-center py-8 text-small text-gray-500'>
+            <div className='text-center py-8 text-small text-apple-white'>
                 <span>ถุงของคุณว่างเปล่า</span>
             </div>
         );

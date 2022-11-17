@@ -49,15 +49,15 @@ const FormContact = () => {
     });
   }
   return (
-    <div className="flex items-center min-h-screen bg-gray-50 dark:bg-white-900">
+    <div className="flex items-center min-h-screen bg-netflix-black">
       <div className="container mx-auto">
         <div className="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
           <div className="text-center">
-            <h1 className="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200"><FaAddressCard/>
-              Contact Us
+            <h1 className="my-3 text-3xl font-semibold text-gray-800"><FaAddressCard/>
+              ติดต่อพวกเรา
             </h1>
-            <p className="text-gray-400 dark:text-gray-400">
-              Fill up the form below to send us a message.
+            <p className="text-gray-600">
+              กรอกแบบฟอร์มข้างล่างเพื่อส่งข้อความถึงเรา
             </p>
           </div>
           <div className="m-7">
@@ -86,24 +86,24 @@ const FormContact = () => {
               <div className="mb-6">
                 <label
                   htmlFor="name"
-                  className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                  className="block mb-2 text-sm text-gray-600"
                 >
-                  Full Name
+                  ชื่อ
                 </label>
                 <input type="text"
                   name="name"
                   id="name"
                   placeholder="John Doe"
                   required
-                  className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring  text-white placeholder-gray-300 border-gray-200 focus:ring-gray-300 focus:border-gray-300"
                 />
               </div>
               <div className="mb-6">
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                  className="block mb-2 text-sm text-gray-600"
                 >
-                  Email Address
+                  ที่อยู่อีเมล
                 </label>
                 <input
                   type="email"
@@ -111,15 +111,15 @@ const FormContact = () => {
                   id="email"
                   placeholder="you@company.com"
                   required
-                  className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring  text-white placeholder-gray-300 border-gray-200 focus:ring-gray-300 focus:border-gray-300"
                 />
               </div>
               <div className="mb-6">
                 <label
                   htmlFor="phone"
-                  className="text-sm text-gray-600 dark:text-gray-400"
+                  className="text-sm text-gray-600"
                 >
-                  Phone Number
+                  เบอร์โทรศัพท์
                 </label>
                 <input
                   type="text"
@@ -127,15 +127,15 @@ const FormContact = () => {
                   id="phone"
                   placeholder="+66 XX-XXX-XXXX"
                   required
-                  className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring  text-white placeholder-gray-300 border-gray-200 focus:ring-gray-300 focus:border-gray-300"
                 />
               </div>
               <div className="mb-6">
                 <label
                   htmlFor="message"
-                  className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                  className="block mb-2 text-sm text-gray-600 "
                 >
-                  Your Message
+                  ข้อความ
                 </label>
 
                 <textarea
@@ -143,16 +143,16 @@ const FormContact = () => {
                   name="message"
                   id="message"
                   placeholder="Your Message"
-                  className="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring  text-white placeholder-gray-300 border-gray-200 focus:ring-gray-300 focus:border-gray-300"
                   required
                 ></textarea>
               </div>
               <div className="mb-6">
                 <button
                   type="submit"
-                  className="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
+                  className="w-full px-3 py-4 text-white bg-red-500 rounded-md focus:bg-red-600 focus:outline-none"
                 >
-                  Send Message
+                  ส่งข้อความ
                 </button>
               </div>
               <p className="text-base text-center text-gray-400" id="result"></p>

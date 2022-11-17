@@ -18,7 +18,7 @@ const Itemslider = (props) => {
     return (
         <div>
             <div className='group'>
-                <h3 className='text-3xl cursor-default p-4'>{title} &nbsp;
+                <h3 className='text-3xl cursor-default p-4 text-apple-white'>{title} &nbsp;
                     <Link to={toItem} className='text-xl text-[#2997FF] cursor-pointer absolute transition-all duration-700 translate-x-[-90px] group-hover:translate-x-0 translate-y-1 group-hover:opacity-100 opacity-0 ease-in-out'>
                         ดูเพิ่มเติม
                     </Link>

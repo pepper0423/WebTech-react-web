@@ -1,5 +1,4 @@
 .bg-iPhone14{
-    background-color: #ffffff;
     width: 100%;
     margin-top: 1rem;
     padding-top: 5%;
@@ -13,7 +12,6 @@
 }
 
 .bg-iPhone14Pro{
-    background-color: #000000;
     padding-top: 5%;
 }
 
@@ -63,7 +61,7 @@
     transition: transform 1s;
 }
 .pichover:hover{
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 .largepicicon{
     width: 110px;

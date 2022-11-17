@@ -6,13 +6,13 @@ import { SlArrowRight } from 'react-icons/sl';
 
 const Breadcrumb = (props) => {
   return (
-    <div className='bg-apple-white'>
+    <div className='bg-[#1A1A1A]'>
       <div className="mx-auto max-w-screen-lg px-5 py-3">
-        <Breadcrumbs separator={<SlArrowRight className='fill-[#d6d6d6]' />} aria-label="breadcrumb">
-          <Link to="/"><FaAppleAlt className='fill-[#626266] hover:fill-[#1D1D1F]' /></Link>
+        <Breadcrumbs separator={<SlArrowRight className='fill-[#bdbdc0]' />} aria-label="breadcrumb">
+          <Link to="/"><FaAppleAlt className='fill-[#bdbdc0] hover:fill-[#9c9c9e]' /></Link>
           {!!props.breadcrumb &&
             props.breadcrumb.map((item, i) => (
-              <span key={i} className="text-sm text-gray-500">
+              <span key={i} className="text-sm text-gray-300">
                 {item}
               </span>
             ))}

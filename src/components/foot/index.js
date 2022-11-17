@@ -77,6 +77,17 @@ function Foot() {
                         <hr />
                         <div className='bot-foot'>
                             <p className='footer-text pt-3 text-small'>Copyright © 2022 Apple Inc. สงวนสิทธิ์ทุกประการ</p>
+                            <div className='flex'>
+                                <NavLink to='/' className='footer-text text-small hover:underline'>นโยบายความเป็นส่วนตัว</NavLink>
+                                <span className='footer-text translate-y-[-3px]'>&nbsp;|&nbsp;</span>
+                                <NavLink to='/' className='footer-text text-small hover:underline'>ข้อกำหนดการใช้งาน</NavLink>
+                                <span className='footer-text translate-y-[-3px]'>&nbsp;|&nbsp;</span>
+                                <NavLink to='/' className='footer-text text-small hover:underline'>การขายและการคืนเงิน</NavLink>
+                                <span className='footer-text translate-y-[-3px]'>&nbsp;|&nbsp;</span>
+                                <NavLink to='/' className='footer-text text-small hover:underline'>ข้อมูลทางกฎหมาย</NavLink>
+                                <span className='footer-text translate-y-[-3px]'>&nbsp;|&nbsp;</span>
+                                <NavLink to='/' className='footer-text text-small hover:underline'>แผงผังเว็บไซต์</NavLink>
+                            </div>
                         </div>
                     </div>
                 </div>

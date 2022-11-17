@@ -1,5 +1,4 @@
 .bg-iPhone14{
-    background-color: white;
     width: 100%;
     margin-top: 1rem;
     padding-top: 5%;
@@ -13,7 +12,6 @@
 }
 
 .bg-iPhone14Pro{
-    background-color: #000000;
     padding-top: 5%;
 }
 
@@ -29,7 +27,6 @@
 .iPhonebody{
     justify-content: center;
     text-align: center;
-    
 }
 .a{
     color: #878686;

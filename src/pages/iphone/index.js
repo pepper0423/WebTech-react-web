@@ -7,11 +7,11 @@ function Iphone() {
     return (
 
 
-        <div className='iPhonebody'>
+        <div className='iPhonebody bg-netflix-black'>
             <header>
                 <Nav disableSticky={true} />
             </header>
-            <div className='bg-iPhone14 grid grid-cols-2 md:grid-cols-2 text-center mt-12'>
+            <div className='pt-2 mt-16 w-100 grid grid-cols-2 md:grid-cols-2 text-center'>
                 <div className='Text'>
                     <h3 className='a'>ใหม่</h3>
                     <h3 className='b'>iPhone14</h3>
@@ -21,11 +21,11 @@ function Iphone() {
 
                     </div>
                 </div>
-                <center><img className='pichover' src="assets/baners/iphone14.jpg" alt='' /></center>
+                <center><img className='pichover' src="assets/baners/iphone14.png" alt='' /></center>
             </div>
 
             <div className='bg-iPhone14 grid grid-cols-2 md:grid-cols-2 text-center mt-12'>
-                <center><img src="assets/products/iphone14/14plus.jpg" alt='' /></center>
+                <center><img src="assets/products/iphone14/14plus.png" alt='' /></center>
                 <div className='Text'>
                     <h3 className='a '>มีอะไรใหม่ใน</h3>
                     <h3 className='c d'>iPhone14</h3>
@@ -33,14 +33,14 @@ function Iphone() {
                     <h1>เริ่มต้นที่ ฿32,900</h1><br></br>
                     <div className='rounded md:rounded-lg'>
 
-                        <div className="my-10 grid grid-cols-3 md:grid-cols-3 text-center mt-12">
+                        <div className="my-10 grid grid-cols-3 md:grid-cols-3 text-center mt-12 ">
                             <div>
                                 <img
                                     alt="Chip"
-                                    className="mx-auto"
-                                    src="assets/compareProduct/iphone/Iphone-14-A15chip.jpg"  //5g.jpg
+                                    className="mx-auto rounded-xl invert"
+                                    src="assets/compareProduct/iphone/Iphone-14-A15chip.png"  //5g.png
                                 />
-                                <p className="mt-4 font-semibold text-black">ชิพ A15 Bionic</p>
+                                <p className="mt-4 font-semibold text-white">ชิพ A15 Bionic</p>
                                 <p className="font-semibold text-gray-400">
                                     ชิปที่เร็วที่สุดในสมาร์ทโฟน
                                 </p>
@@ -48,25 +48,25 @@ function Iphone() {
                             <div>
                                 <img
                                     alt="Chip"
-                                    className="mx-auto largepicicon"
-                                    src="assets/compareProduct/iphone/iphone14_camera.jpg"  //iphone14_camera.jpg
+                                    className="mx-auto largepicicon rounded-xl h-32 invert"
+                                    src="assets/compareProduct/iphone/iphone14_camera.png"  //iphone14_camera.png
                                 />
-                                <p className="mt-4 font-semibold text-black">ระบบกล้องคู่</p>
+                                <p className="mt-4 font-semibold text-white">ระบบกล้องคู่</p>
                                 <p className="font-semibold text-gray-400">
                                     ความละเอียดกว่า 12 MP
                                 </p>
                             </div>
-                            <div>
+                            <div className='mt-6'>
                                 <img
                                     alt="Chip"
-                                    className="mx-auto largepicicon"
-                                    src="assets/compareProduct/iphone/5g.jpg"  //5g.jpg
+                                    className="mx-auto largepicicon rounded-xl invert"
+                                    src="assets/compareProduct/iphone/5g.png"  //5g.png
                                 />
                                 <br></br>
-                                <p className="mt-4 font-semibold text-black">ระบบเซลลูลาร์ 5G ที่เร็วสุดแรง³</p>    </div>
+                                <p className="mt-4 font-semibold text-white">ระบบเซลลูลาร์ 5G ที่เร็วสุดแรง³</p>    </div>
                         </div>
                         <Link to='/iphone14'>
-                        <button className="rounded-full bg-stone-800 w-20">
+                        <button className="rounded-full bg-stone-800 w-24 h-12 hover:bg-stone-600">
                             <h1 className='text-white'>ซื้อเลย</h1>
                         </button>
                         </Link>
@@ -86,7 +86,7 @@ function Iphone() {
                 </div>
                 <div>
                     <center>
-                        <img src="assets/baners/iphone14pro.jpg" alt='' />
+                        <img src="assets/baners/iphone14pro.png" alt='' />
                     </center>
                     </div>
                     
@@ -106,7 +106,7 @@ function Iphone() {
                                 <img
                                     alt="Chip"
                                     className="mx-auto"
-                                    src="assets/compareProduct/iphone/iphone14Prochip.jpg"  //5g.jpg
+                                    src="assets/compareProduct/iphone/iphone14Prochip.png"  //5g.png
                                 />
                                 <p className="mt-4 font-semibold text-black">ชิป A16 Bionic</p>
                                 <br></br>
@@ -118,7 +118,7 @@ function Iphone() {
                                 <img
                                     alt="Chip"
                                     className="mx-auto largepicicon"
-                                    src="assets/compareProduct/iphone/iphone14proCamera.jpg"  //iphone14_camera.jpg
+                                    src="assets/compareProduct/iphone/iphone14proCamera.png"  //iphone14_camera.png
                                 />
                                 <p className="mt-4 font-semibold text-black">ระบบกล้องระดับโปร</p>
                                 <br></br>
@@ -130,7 +130,7 @@ function Iphone() {
                                 <img
                                     alt="Chip"
                                     className="mx-auto largepicicon "
-                                    src="assets/compareProduct/iphone/dynamic-iphone14Pro.jpg"
+                                    src="assets/compareProduct/iphone/dynamic-iphone14Pro.png"
                                 />
                                 <p className="mt-4 font-semibold text-black">Dynamic Island</p>    
                                 <br></br>
@@ -140,7 +140,7 @@ function Iphone() {
                                 </div>
                         </div>
                         <Link to='/iphone14pro'>
-                            <button className="rounded-full bg-stone-800 w-20">
+                            <button className="rounded-full bg-stone-800 w-24 h-12 hover:bg-stone-600">
                                 <h1 className='text-white'>ซื้อเลย</h1>
                             </button>
                         </Link>
