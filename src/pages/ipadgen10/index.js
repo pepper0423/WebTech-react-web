@@ -280,7 +280,7 @@ const Ipadgen10 = () => {
                       style={{ minWidth: '100px' }}
                     >
                       <button
-                        className="text-sm text-gray-800 cursor-pointer hover:underline"
+                        className="text-sm text-gray-300 cursor-pointer hover:underline"
                         onClick={handleChangeVariantAppleCare}
                       >
                         {variantAppleCare ? 'ลบออก' : 'เพิ่ม'}

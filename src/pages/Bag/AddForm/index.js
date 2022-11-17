@@ -11,9 +11,9 @@ const AddForm = () => {
             <header>
                 <Nav disableSticky={true} />
             </header>
-            <section className='container py-10 mx-auto px-72'>
+            <section className='container py-10 mx-auto px-[25%]'>
                 <SuccessModal isVisible={showModal} />
-                <div className='bg-white py-5 rounded-xl mx-auto px-'>
+                <div className='bg-white py-5 rounded-xl'>
                     <h2 className='text-2xl text-center pb-8'>กรอกข้อมูลการจัดส่ง</h2>
                     <form className="w-full max-w-lg mx-auto">
                         <div className="flex flex-wrap -mx-3 mb-6">
