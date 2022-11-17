@@ -40,6 +40,32 @@ const Help = () => {
           </h1>
         </div>
       </div>
+      <div className="my-12 grid grid-cols-1 justify-items-center text-center">
+        <div>
+          <h1 className="text-5xl text-white font-medium my-4">ค้นหาหัวข้อ</h1>
+          <div className="container flex mx-auto mt-4">
+            <div className="flex border-2 rounded">
+              <button className="flex items-center justify-center px-4 bg-gray-200">
+                <svg
+                  className="w-6 h-6 text-gray-800"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
+                </svg>
+              </button>
+              <input
+                type="text"
+                className="px-4 py-2"
+                style={{ width: '50vw' }}
+                placeholder="ค้นหาบริการช่วยเหลือ"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
       <div className="grid grid-cols-2 my-12 gap-y-8 md:grid-cols-3 justify-items-center xl:grid-cols-7 text-center xl:mx-96 xl:my-24">
         <div className="w-16 flex flex-col space-y-4">
           <img
@@ -99,7 +125,7 @@ const Help = () => {
         </div>
       </div>
       <hr />
-
+      <FormContact />
       <div
         className="grid grid-cols-1 my-12 text-center gap-20 xl:my-20 xl:mx-96 xl:grid-cols-3 xl:divide-x xl:gap-0 text-white"
       >
@@ -135,33 +161,6 @@ const Help = () => {
             ค้นหาของฉัน
             <KeyboardArrowRightIcon sx={{ fontSize: '18px' }} />
           </span>
-        </div>
-      </div>
-      <hr />
-
-      <div className="my-12 grid grid-cols-1 justify-items-center text-center">
-        <div>
-          <h1 className="text-5xl text-white font-medium my-4">ค้นหาหัวข้อ</h1>
-          <div className="container flex mx-auto mt-4">
-            <div className="flex border-2 rounded">
-              <button className="flex items-center justify-center px-4 bg-gray-200">
-                <svg
-                  className="w-6 h-6 text-gray-800"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
-                </svg>
-              </button>
-              <input
-                type="text"
-                className="px-4 py-2"
-                style={{ width: '50vw' }}
-                placeholder="ค้นหาบริการช่วยเหลือ"
-              />
-            </div>
-          </div>
         </div>
       </div>
       <hr />
@@ -307,7 +306,6 @@ const Help = () => {
         </div>
       </div>
       <hr />
-      <FormContact />
       <div className="grid grid-cols-1 justify-items-center my-12 mx-10">
         <div>
           <h1 className="text-3xl text-white font-medium my-4">
