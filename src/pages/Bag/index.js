@@ -117,9 +117,11 @@ function Bag() {
                                             /เดือน เป็นเวลา 10 เดือน ดอกเบี้ย 0%
                                         </p>
                                     </div>
-                                    <AppleButton className="w-full md:w-1/2 p-3 text-lg block ml-auto mt-8 rounded-2xl">
-                                        ชำระเงิน
-                                    </AppleButton>
+                                    <Link to='AddForm'>
+                                        <AppleButton className="w-full md:w-1/2 p-3 text-lg block ml-auto mt-8 rounded-2xl">
+                                            ชำระเงิน
+                                        </AppleButton>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
